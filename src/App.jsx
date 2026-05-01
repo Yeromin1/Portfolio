@@ -1,7 +1,9 @@
+import Layout from "./Layout/Layout.jsx";
+
 const App = () => {
   return (
     <>
-      <h1>Hello</h1>
+      <Layout />
     </>
   );
 };

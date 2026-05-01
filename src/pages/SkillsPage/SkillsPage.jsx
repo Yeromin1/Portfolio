@@ -1,5 +1,9 @@
 const SkillsPage = () => {
-  return <div>SkillsPage</div>;
+  return (
+    <section id="skills">
+      <p>SkillsPage</p>
+    </section>
+  );
 };
 
 export default SkillsPage;

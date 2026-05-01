@@ -1,5 +1,5 @@
 const CertificatesPage = () => {
-  return <div>CertificatesPage</div>;
+  return <section id="certificates">Certificates</section>;
 };
 
 export default CertificatesPage;

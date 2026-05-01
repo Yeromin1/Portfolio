@@ -1,7 +1,11 @@
+import Navigation from "../Navigation/Navigation";
+
 const Header = () => {
   return (
     <header>
-      <h1>Header</h1>
+      <nav>
+        <Navigation />
+      </nav>
     </header>
   );
 };

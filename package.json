@@ -1,5 +1,5 @@
 {
-  "name": "goit-react-hw-01",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
+    "clsx": "^2.1.1",
     "daisyui": "^5.5.19",
     "formik": "^2.4.9",
+    "lucide-react": "^1.14.0",
     "modern-normalize": "^3.0.1",
+    "motion": "^12.38.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.14.2",
