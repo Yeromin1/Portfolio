@@ -1,29 +1,15 @@
-import Modal from "../Modal/Modal";
+import { navItems } from "../../constants/navItems";
+import scrollToSection from "../../utils/scrollToSection";
 
 const Navigation = () => {
-  const scrollToSection = (id) => {
-    window.location.hash = id;
-  };
   return (
-    <div className="flex items-center justify-between">
-      <div>
-        <h2>My Portfolio</h2>
-      </div>
-      <nav className="flex gap-4">
-        <button onClick={() => scrollToSection("home")}>Home</button>
-        <button onClick={() => scrollToSection("about")}>About</button>
-        <button onClick={() => scrollToSection("projects")}>Projects</button>
-        <button onClick={() => scrollToSection("certificates")}>
-          Certificates
+    <nav className="hidden md:flex gap-4">
+      {navItems.map((item) => (
+        <button key={item.id} onClick={() => scrollToSection(item.id)}>
+          {item.label}
         </button>
-        <button onClick={() => scrollToSection("skills")}>Skills</button>
-        <button onClick={() => scrollToSection("experience")}>
-          Experience
-        </button>
-        <button onClick={() => scrollToSection("contact")}>Contact</button>
-      </nav>
-      <Modal />
-    </div>
+      ))}
+    </nav>
   );
 };
 
