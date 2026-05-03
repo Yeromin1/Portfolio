@@ -1,6 +1,10 @@
 const scrollToSection = (id) => {
-  document.getElementById(id)?.scrollIntoView({
-    // behavior: "smooth",
+  const el = document.getElementById(id);
+
+  if (!el) return;
+  window.history.pushState(null, "", `#${id}`);
+  el.scrollIntoView({
+    block: "start",
   });
 };
 
