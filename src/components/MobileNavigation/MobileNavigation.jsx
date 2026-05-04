@@ -44,10 +44,7 @@ const MobileNavigation = () => {
 
       {open && (
         <div className="fixed inset-0 z-40" onClick={() => setOpen(false)}>
-          <div
-            // onClick={(e) => e.stopPropagation()}
-            className="absolute top-24 w-64 p-4 rounded-r-xl shadow-[10px_0_15px_#fff,_15px_0_30px_#00ffff] bg-body"
-          >
+          <div className="absolute top-24 w-64 p-4 rounded-r-xl shadow-[10px_0_15px_#fff,_15px_0_30px_#00ffff] bg-body">
             <nav className="flex flex-col gap-2 text-sm">
               {navItems.map((item) => (
                 <button
