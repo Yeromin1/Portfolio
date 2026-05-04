@@ -1,7 +1,9 @@
 const SkillsPage = () => {
   return (
-    <section id="skills">
-      <p>SkillsPage</p>
+    <section id="skills" className="bg-section">
+      <div className="container">
+        <p>SkillsPage</p>
+      </div>
     </section>
   );
 };

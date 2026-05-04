@@ -61,3 +61,23 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/*-------css---------*/
+.container {
+  @apply max-w-[375px] px-4 mx-auto
+            sm:max-w-[640px] sm:px-5
+            md:max-w-[768px] md:px-5
+            lg:max-w-[1024px] lg:px-6
+            xl:max-w-[1280px] xl:px-8
+            2xl:max-w-[1536px];
+}
+
+.bg-section {
+  background-color: #010b1e;
+}
+
+.text-glow {
+  text-shadow:
+    rgb(35, 75, 134) 5px 0px 20px,
+    rgb(101, 113, 131) 0px 0px 20px;
+}

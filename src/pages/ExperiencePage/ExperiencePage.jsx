@@ -1,7 +1,9 @@
 const ExperiencePage = () => {
   return (
-    <section id="experience">
-      <p>ExperiencePage</p>
+    <section id="experience" className="bg-section">
+      <div className="container">
+        <p>ExperiencePage</p>
+      </div>
     </section>
   );
 };
