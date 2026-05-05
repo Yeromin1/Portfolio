@@ -62,7 +62,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*-------css---------*/
+
 .container {
   @apply mx-auto w-full max-w-[375px] px-4
          md:max-w-[768px] md:px-5
@@ -85,8 +90,16 @@ body {
     10px 0 20px #657183;
 }
 
-/* background: rgba(255, 255, 255, 0.04);
-border: 2px solid rgba(0, 255, 255, 0.2);
-border-radius: 20px;
-padding: 40px;
-box-shadow: 0 0 25px rgba(0, 255, 255, 0.08); */
+/* color: #fff;
+background: #03101a;
+border: 2px solid #00ffff;
+padding: 10px 25px;
+border-radius: 30px;
+text-decoration: none;
+font-size: 1rem;
+margin-top: 15px;
+display: inline-block;
+box-shadow:
+  0 0 15px #234b86,
+  0 0 35px #234b86;
+transition: all 0.3s ease-in-out; */
