@@ -7,30 +7,28 @@ const HomePage = () => {
       id="home"
       className="h-screen bg-[#020e26] pt-[110px] pb-[80px] relative overflow-hidden"
     >
-      {/* ✨ TOP LEFT → CENTER → TOP LEFT */}
+      {/* ✨ BACKGROUND GLOW 1  */}
       <motion.div
-        className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-cyan-400/10 rounded-full blur-3xl"
-        animate={{
-          x: [0, 250, 0],
-          y: [0, 250, 0],
-        }}
+        className="absolute top-[-80px] left-[-80px] w-[180px] h-[180px] bg-cyan-400/10 rounded-full blur-xl"
+        style={{ willChange: "transform", transform: "translateZ(0)" }}
+        animate={{ x: 200, y: 200 }}
         transition={{
-          duration: 10,
+          duration: 12,
           repeat: Infinity,
+          repeatType: "reverse",
           ease: "easeInOut",
         }}
       />
 
-      {/* ✨ BOTTOM RIGHT → CENTER → BOTTOM RIGHT */}
+      {/* ✨ BACKGROUND GLOW 2 */}
       <motion.div
-        className="absolute bottom-[-120px] right-[-120px] w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-3xl"
-        animate={{
-          x: [0, -250, 0],
-          y: [0, -250, 0],
-        }}
+        className="absolute bottom-[-80px] right-[-80px] w-[180px] h-[180px] bg-blue-500/10 rounded-full blur-xl"
+        style={{ willChange: "transform", transform: "translateZ(0)" }}
+        animate={{ x: -200, y: -200 }}
         transition={{
-          duration: 10,
+          duration: 12,
           repeat: Infinity,
+          repeatType: "reverse",
           ease: "easeInOut",
         }}
       />
