@@ -86,7 +86,7 @@ const HomePage = () => {
                 scale: 1.05,
                 boxShadow: "0 0 35px #00ffff",
               }}
-              className="bg-[#03101A] border-2 border-[#00ffff] px-[25px] py-[10px] rounded-full hover:bg-white hover:text-black hover:scale-105"
+              className="bg-[#03101A] border-2 border-[#00ffff] px-[25px] py-[10px] rounded-full transition md:transition-transform md:transition-colors duration-300 md:hover:bg-white md:hover:text-black md:hover:scale-105"
             >
               View Resume
             </motion.button>

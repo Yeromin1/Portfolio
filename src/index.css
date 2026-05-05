@@ -90,16 +90,10 @@ button {
     10px 0 20px #657183;
 }
 
-/* color: #fff;
-background: #03101a;
-border: 2px solid #00ffff;
-padding: 10px 25px;
-border-radius: 30px;
-text-decoration: none;
-font-size: 1rem;
-margin-top: 15px;
-display: inline-block;
-box-shadow:
-  0 0 15px #234b86,
-  0 0 35px #234b86;
-transition: all 0.3s ease-in-out; */
+/* order-radius: 20px;
+    border: 4px solid #64ffda;
+    box-shadow: 0 0 30px #64ffda, 0 0 60px #00bfff inset;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    width: 100%;
+        max-width: 250px;
+    */
