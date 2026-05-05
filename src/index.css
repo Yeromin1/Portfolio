@@ -78,3 +78,15 @@ body {
     rgb(35, 75, 134) 5px 0px 20px,
     rgb(101, 113, 131) 0px 0px 20px;
 }
+
+.title-shadow {
+  text-shadow:
+    0 10px 8px #234b86,
+    10px 0 20px #657183;
+}
+
+/* background: rgba(255, 255, 255, 0.04);
+border: 2px solid rgba(0, 255, 255, 0.2);
+border-radius: 20px;
+padding: 40px;
+box-shadow: 0 0 25px rgba(0, 255, 255, 0.08); */
