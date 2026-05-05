@@ -3,8 +3,39 @@ import myPhoto from "../../assets/images/MyFoto.jpg";
 
 const HomePage = () => {
   return (
-    <section id="home" className="h-screen bg-[#020e26] pt-[110px] pb-[80px]">
-      <div className="container grid gap-[60px]">
+    <section
+      id="home"
+      className="h-screen bg-[#020e26] pt-[110px] pb-[80px] relative overflow-hidden"
+    >
+      {/* ✨ TOP LEFT → CENTER → TOP LEFT */}
+      <motion.div
+        className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-cyan-400/10 rounded-full blur-3xl"
+        animate={{
+          x: [0, 250, 0],
+          y: [0, 250, 0],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+
+      {/* ✨ BOTTOM RIGHT → CENTER → BOTTOM RIGHT */}
+      <motion.div
+        className="absolute bottom-[-120px] right-[-120px] w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-3xl"
+        animate={{
+          x: [0, -250, 0],
+          y: [0, -250, 0],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+
+      <div className="container grid gap-[60px] ">
         <div className="bg-white/5 border-2 border-cyan-400/20 rounded-[20px] p-10 shadow-[0_0_25px_rgba(0,255,255,0.08)]">
           {/* TITLE ANIMATION */}
           <motion.h1
