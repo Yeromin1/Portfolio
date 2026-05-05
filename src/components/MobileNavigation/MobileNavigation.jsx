@@ -12,7 +12,7 @@ const MobileNavigation = () => {
         onClick={() => setOpen(!open)}
         className="w-12 h-12 flex items-center justify-center rounded-lg   transition"
       >
-        <div className="relative w-5 h-5 flex items-center justify-center">
+        <div className="relative w-7 h-7 flex items-center justify-center">
           <div
             className={`absolute inset-0 grid grid-cols-2 gap-1 transition-all duration-700 ${
               open
@@ -20,14 +20,14 @@ const MobileNavigation = () => {
                 : "opacity-100 scale-100 rotate-0"
             }`}
           >
-            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
+            <span className="w-2 h-2 bg-white rounded-full"></span>
+            <span className="w-2 h-2 bg-white rounded-full"></span>
+            <span className="w-2 h-2 bg-white rounded-full"></span>
+            <span className="w-2 h-2 bg-white rounded-full"></span>
           </div>
 
           <svg
-            className={`absolute w-7 h-7 transition-all duration-700 ${
+            className={`absolute w-10 h-10 transition-all duration-700 ${
               open
                 ? "opacity-100 scale-100 rotate-0"
                 : "opacity-0 scale-75 -rotate-90"
@@ -44,13 +44,13 @@ const MobileNavigation = () => {
 
       {open && (
         <div className="fixed inset-0 z-40" onClick={() => setOpen(false)}>
-          <div className="absolute top-24 w-64 p-4 rounded-r-xl shadow-[10px_0_15px_#fff,_15px_0_30px_#00ffff] bg-body">
-            <nav className="flex flex-col gap-2 text-sm">
+          <div className="absolute top-24 w-64 p-4 rounded-r-xl shadow-[10px_0_15px_#fff,_15px_0_30px_#00ffff] bg-section">
+            <nav className="flex flex-col gap-4 text-sm">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left hover:opacity-70 transition"
+                  className="text-left !text-[18px] font-medium"
                 >
                   {item.label}
                 </button>
