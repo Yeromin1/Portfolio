@@ -78,22 +78,50 @@ button {
   background-color: #010b1e;
 }
 
-.text-glow {
-  text-shadow:
-    rgb(35, 75, 134) 5px 0px 20px,
-    rgb(101, 113, 131) 0px 0px 20px;
-}
-
 .title-shadow {
   text-shadow:
     0 10px 8px #234b86,
     10px 0 20px #657183;
 }
 
-/* order-radius: 20px;
-    border: 4px solid #64ffda;
-    box-shadow: 0 0 30px #64ffda, 0 0 60px #00bfff inset;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    width: 100%;
-        max-width: 250px;
-    */
+/*-------Home Page---------*/
+.text-glow {
+  text-shadow:
+    rgb(35, 75, 134) 5px 0px 20px,
+    rgb(101, 113, 131) 0px 0px 20px;
+}
+
+/*-------About Page---------*/
+summary::marker {
+  color: #64ffda !important;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.btn {
+  width: fit-content;
+  padding: 10px 25px;
+  background: #03101a;
+  border: 2px solid #64ffda;
+  color: #ffffff;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+  background: #64ffda;
+  color: #03101a;
+  box-shadow:
+    0 0 20px #64ffda,
+    0 0 35px #00bfff;
+}
+
+/*-------Projects Page---------*/
+
+/* background: #112240;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(35, 75, 134, 0.4); */
