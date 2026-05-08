@@ -38,7 +38,10 @@ const AboutPage = () => {
               </>
             )}
 
-            <button onClick={() => setIsOpen((prev) => !prev)} className="btn">
+            <button
+              onClick={() => setIsOpen((prev) => !prev)}
+              className="btn py-[10px] px-[25px]"
+            >
               {isOpen ? "Read Less" : "Read More"}
             </button>
           </div>

@@ -1,17 +1,24 @@
+import gsImg from "../assets/images/GS.jpg";
+import yacht from "../assets/images/yacht.jpg";
+
 const projects = [
   {
     id: 1,
-    title: "Project One",
-    description: "Short description of project one",
-    img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    link: "https://github.com/yourname/project-one",
+    title: "Golden Service",
+    description:
+      "A responsive e-commerce website with a smart lock for browsing and purchasing locks. Developed using HTML, CSS, and JavaScript. It features a product catalog with images, descriptions, and prices, as well as basic interactivity (filtering and navigation). The website is optimized for different devices, includes a responsive layout, and supports dynamic product image updates, providing a convenient and modern user experience.",
+    img: gsImg,
+    link: "https://github.com/Yeromin1/castle-on-saltovka",
+    demo: "https://yeromin1.github.io/castle-on-saltovka/",
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "Short description of project two",
-    img: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
-    link: "https://github.com/yourname/project-two",
+    title: "Yacht",
+    description:
+      "A responsive website for browsing and renting yachts. Developed using HTML, CSS, and JavaScript. It features a yacht catalog with images, descriptions, and prices. The website has a responsive layout, is optimized for different devices, and provides a convenient and modern user interface.",
+    img: yacht,
+    link: "https://github.com/Yeromin1/project-DevStudents",
+    demo: "https://yeromin1.github.io/project-DevStudents/",
   },
 ];
 

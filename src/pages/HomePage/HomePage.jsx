@@ -60,7 +60,7 @@ const HomePage = () => {
             <motion.button
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1yhBYrd4YI7FoovkrzbuVrOFGE8DQcb9D/view?usp=drive_link",
+                  "https://drive.google.com/file/d/1PE9fFEk9l9Y6LhU97Zs2ofVqFk7Sn0TE/view?usp=sharing",
                 )
               }
               initial={{ opacity: 0, y: 20 }}
