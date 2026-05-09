@@ -41,9 +41,14 @@ const HomePage = () => {
 
             <Motion delay={0.6}>
               <div className="flex justify-center">
-                <button className="bg-[#03101A] border-2 border-[#00ffff] px-[25px] py-[10px] rounded-full">
+                <a
+                  href="https://drive.google.com/file/d/1PE9fFEk9l9Y6LhU97Zs2ofVqFk7Sn0TE/view?usp=drive_link"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn px-[25px] py-[10px] animate-[glowPulse_2.5s_ease-in-out_infinite]"
+                >
                   View Resume
-                </button>
+                </a>
               </div>
             </Motion>
           </div>

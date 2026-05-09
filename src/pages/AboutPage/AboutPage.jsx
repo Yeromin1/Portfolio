@@ -1,7 +1,9 @@
 import { useState } from "react";
-import myPhoto from "../../assets/images/MyFotoAbout.jpg";
+
 import { Motion } from "../../animations/reveal/Motion";
 import { zoomIn } from "../../animations/reveal/variants";
+
+import myPhoto from "../../assets/images/MyFoto.jpg";
 
 const AboutPage = () => {
   const [isOpen, setIsOpen] = useState(false);

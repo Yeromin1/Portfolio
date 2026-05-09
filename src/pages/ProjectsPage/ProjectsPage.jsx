@@ -45,14 +45,22 @@ const ProjectsPage = () => {
                       </div>
 
                       <div className="flex justify-between w-full ">
-                        <a href={project.link} target="_blank" rel="noreferrer">
-                          <button className="btn py-2 px-3">GitHub Code</button>
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="btn py-2 px-3"
+                        >
+                          GitHub Code
                         </a>
 
-                        <a href={project.demo} target="_blank" rel="noreferrer">
-                          <button className="btn py-2 px-3">
-                            Live Preview
-                          </button>
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="btn py-2 px-3"
+                        >
+                          Live Preview
                         </a>
                       </div>
                     </div>

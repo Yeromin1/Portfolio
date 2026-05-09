@@ -5,9 +5,9 @@ const CertificatesPage = () => {
     <section id="certificates" className="bg-section overflow-hidden">
       <div className="container">
         <Motion delay={0}>
-          <p className="text-4xl font-semibold title-shadow text-center mb-8">
+          <h2 className="text-4xl font-semibold title-shadow text-center mb-8">
             Certificates
-          </p>
+          </h2>
         </Motion>
       </div>
     </section>

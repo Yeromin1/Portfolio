@@ -84,11 +84,30 @@ button {
     10px 0 20px #657183;
 }
 
-/*-------Home Page---------*/
+/*-------Header---------*/
 .text-glow {
   text-shadow:
     rgb(35, 75, 134) 5px 0px 20px,
     rgb(101, 113, 131) 0px 0px 20px;
+}
+
+/*-------Home Page---------*/
+@keyframes glowPulse {
+  0% {
+    box-shadow:
+      0 0 10px #234b86,
+      0 0 20px #234b86;
+  }
+  50% {
+    box-shadow:
+      0 0 15px #234b86,
+      0 0 35px #234b86;
+  }
+  100% {
+    box-shadow:
+      0 0 10px #234b86,
+      0 0 20px #234b86;
+  }
 }
 
 /*-------About Page---------*/
