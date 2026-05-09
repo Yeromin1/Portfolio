@@ -1,4 +1,5 @@
 import { Motion } from "../../animations/reveal/Motion";
+import { fadeOnly } from "../../animations/reveal/variants";
 import projects from "../../data/projects";
 
 const ProjectsPage = () => {
@@ -23,7 +24,7 @@ const ProjectsPage = () => {
                 id={`slide${index + 1}`}
                 className="carousel-item relative w-full p-4"
               >
-                <Motion delay={0.3}>
+                <Motion variant={fadeOnly} delay={0.3}>
                   <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full">
                     <figure className="w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
                       <img
