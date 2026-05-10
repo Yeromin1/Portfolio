@@ -5,7 +5,7 @@ import { Motion } from "../../animations/reveal/Motion";
 import { fadeUp } from "../../animations/reveal/variants";
 
 import certificateImg from "../../assets/images/certificate.jpg";
-import certificates from "../../assets/images/Certificate2.jpeg";
+import certificates from "../../assets/images/Certificatesss.jpeg";
 
 const CertificatesPage = () => {
   const [open, setOpen] = useState(false);
