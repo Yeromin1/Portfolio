@@ -8,9 +8,9 @@ const HomePage = () => {
   return (
     <section
       id="home"
-      className="h-screen bg-[#020e26] py-20 relative overflow-hidden md:pt-28"
+      className="h-screen bg-[#020e26] py-20 relative overflow-hidden md:pt-28 md:h-auto"
     >
-      <div className="container grid gap-[60px] justify-items-center md:gap-7">
+      <div className="container grid gap-[60px] justify-items-center">
         {/* BACKGROUND ANIMATION */}
         <FloatingCircle
           className="absolute top-[-80px] left-[-80px] w-[180px] h-[180px] bg-cyan-400/10 rounded-full blur-xl"
@@ -56,7 +56,7 @@ const HomePage = () => {
 
         <Motion variant={zoomIn} delay={0.9}>
           <div className="avatar mx-auto">
-            <div className="ring-4 ring-[#094165] w-44 rounded-full shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
+            <div className="ring-4 ring-[#094165] w-44 rounded-full shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)] md:w-48">
               <img src={myPhoto} alt="My photo" />
             </div>
           </div>
