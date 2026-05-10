@@ -4,7 +4,7 @@ import ImageLightbox from "../../components/lightbox/ImageLightbox";
 import { Motion } from "../../animations/reveal/Motion";
 import { fadeUp } from "../../animations/reveal/variants";
 
-import certificateImg from "../../assets/images/certificate.jpg";
+import certificateImg from "../../assets/images/Certificate.jpg";
 import certificates from "../../assets/images/Certificatesss.jpeg";
 
 const CertificatesPage = () => {
