@@ -64,8 +64,8 @@ const CertificatesPage = () => {
                   Power of Leadership
                 </h4>
                 <p>
-                  Successfully completed the business training “Power of
-                  Leadership” and gained knowledge in leadership and management.
+                  Successfully completed the business training Power of
+                  Leadership and gained knowledge in leadership and management.
                 </p>
               </div>
             </div>
