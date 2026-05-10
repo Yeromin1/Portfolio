@@ -8,7 +8,18 @@ export const zoomIn = {
   visible: { opacity: 1, scale: 1 },
 };
 
-export const fadeOnly = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
+export const fadeCard = {
+  hidden: {
+    opacity: 0,
+    scale: 0.92,
+  },
+
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 1,
+      ease: "easeOut",
+    },
+  },
 };

@@ -8,9 +8,9 @@ const HomePage = () => {
   return (
     <section
       id="home"
-      className="h-screen bg-[#020e26] py-20 relative overflow-hidden"
+      className="h-screen bg-[#020e26] py-20 relative overflow-hidden md:pt-28"
     >
-      <div className="container grid gap-[60px] justify-items-center">
+      <div className="container grid gap-[60px] justify-items-center md:gap-7">
         {/* BACKGROUND ANIMATION */}
         <FloatingCircle
           className="absolute top-[-80px] left-[-80px] w-[180px] h-[180px] bg-cyan-400/10 rounded-full blur-xl"
@@ -26,15 +26,15 @@ const HomePage = () => {
 
         {/* CONTENT */}
         <Motion delay={0}>
-          <div className="bg-white/5 border-2 border-cyan-400/20 rounded-[20px] p-10 shadow-[0_0_25px_rgba(0,255,255,0.08)] ">
+          <div className="bg-white/5 border-2 border-cyan-400/20 rounded-[20px] p-10 shadow-[0_0_25px_rgba(0,255,255,0.08)] md:px-14 md:py-10 ">
             <Motion delay={0.1}>
-              <h1 className="title-shadow font-semibold text-center text-2xl mb-[15px] whitespace-nowrap">
+              <h1 className="title-shadow font-semibold text-center text-2xl mb-[15px] whitespace-nowrap md:text-[33px] md:leading-[1.41]">
                 Hi, I`m Dmytro Yeromin
               </h1>
             </Motion>
 
             <Motion delay={0.3}>
-              <p className="font-medium text-center text-lg text-[#00ffff] mb-10">
+              <p className="font-medium text-center text-lg text-[#00ffff] mb-10 md:font-semibold md:text-2xl">
                 Front-end Developer
               </p>
             </Motion>
