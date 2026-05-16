@@ -63,7 +63,7 @@ const CertificatesPage = () => {
                 <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda]">
                   Power of Leadership
                 </h4>
-                <p>
+                <p className="text-sm leading-relaxed text-gray-300">
                   Successfully completed the business training Power of
                   Leadership and gained knowledge in leadership and management.
                 </p>

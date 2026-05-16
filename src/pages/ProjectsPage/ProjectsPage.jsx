@@ -1,8 +1,12 @@
+import { useRef } from "react";
 import { Motion } from "../../animations/reveal/Motion";
 import { fadeUp } from "../../animations/reveal/variants";
 import projects from "../../data/projects";
+import { useAutoCarousel } from "../../hooks/useAutoCarousel";
 
 const ProjectsPage = () => {
+  const carouselRef = useRef(null);
+  useAutoCarousel(carouselRef);
   return (
     <section id="projects" className="bg-section">
       <div className="container py-20">
@@ -12,7 +16,7 @@ const ProjectsPage = () => {
           </h2>
         </Motion>
 
-        <div className="flex  overflow-x-auto w-full">
+        <div ref={carouselRef} className="flex  overflow-x-auto w-full">
           {projects.map((project, index) => {
             const prevSlide = index === 0 ? projects.length : index;
 
