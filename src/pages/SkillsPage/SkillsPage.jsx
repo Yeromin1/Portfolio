@@ -1,117 +1,44 @@
+import { Motion } from "../../animations/reveal/Motion";
+import SoftSkillsTimeline from "../../components/SkillsTimeline/SoftSkillsTimeline";
+import TechSkillsTimeline from "../../components/SkillsTimeline/TechSkillsTimeline";
+
+import { techSkills, softSkills } from "../../data/skills";
+
 const SkillsPage = () => {
   return (
     <section id="skills" className="bg-section overflow-hidden">
       <div className="container py-20">
-        <h2 className="text-4xl font-semibold title-shadow text-center mb-8">
-          My Skills
-        </h2>
+        <Motion delay={0.1}>
+          <h2 className="text-4xl font-semibold title-shadow text-center mb-8">
+            My Skills
+          </h2>
+        </Motion>
 
-        <h4>Tech skills</h4>
-        <ul className="timeline timeline-vertical">
-          <li>
-            <div className="timeline-middle text-[#64ffda]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5 "
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-end timeline-box bg-[linear-gradient(135deg,#0a192f,#0d1b2a)]  transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
-              <p className="text-lg">HTML</p>
-            </div>
-            <hr className="bg-[#64ffda]" />
-          </li>
-          <li>
-            <hr className="bg-[#64ffda]" />
-            <div className="timeline-middle text-[#64ffda]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-end timeline-box bg-[linear-gradient(135deg,#0a192f,#0d1b2a)]  transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
-              <p className="text-lg">CSS</p>
-            </div>
-            <hr className="bg-[#64ffda]" />
-          </li>
-          <li>
-            <hr className="bg-[#64ffda]" />
-            <div className="timeline-middle text-[#64ffda]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-end timeline-box bg-[linear-gradient(135deg,#0a192f,#0d1b2a)]  transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
-              <p className="text-lg">JavaScript</p>
-            </div>
-            <hr className="bg-[#64ffda]" />
-          </li>
-          <li>
-            <hr className="bg-[#64ffda]" />
-            <div className="timeline-middle text-[#64ffda]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-end timeline-box bg-[linear-gradient(135deg,#0a192f,#0d1b2a)]  transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
-              <p className="text-lg">React.js</p>
-            </div>
-            <hr className="bg-[#64ffda]" />
-          </li>
-          <li>
-            <hr className="bg-[#64ffda]" />
-            <div className="timeline-middle text-[#64ffda]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-end timeline-box bg-[linear-gradient(135deg,#0a192f,#0d1b2a)]  transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
-              <p className="text-lg">Node.js</p>
-            </div>
-          </li>
-        </ul>
+        <div className="flex flex-col md:flex-row gap-10 justify-center">
+          <div>
+            <Motion delay={0.3}>
+              <h4 className="text-center font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86]">
+                Tech Skills
+              </h4>
+            </Motion>
+
+            <Motion delay={0.5}>
+              <TechSkillsTimeline skills={techSkills} />
+            </Motion>
+          </div>
+
+          <div>
+            <Motion delay={0.3}>
+              <h4 className="text-center font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86]">
+                Soft Skills
+              </h4>
+            </Motion>
+
+            <Motion delay={0.5}>
+              <SoftSkillsTimeline skills={softSkills} />
+            </Motion>
+          </div>
+        </div>
       </div>
     </section>
   );
