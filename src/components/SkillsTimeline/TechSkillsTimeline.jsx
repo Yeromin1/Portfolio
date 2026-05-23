@@ -5,7 +5,7 @@ const TechSkillsTimeline = ({ skills }) => {
         <li key={skill.id}>
           {index !== 0 && <hr className="bg-[#64ffda]" />}
 
-          <div className="timeline-start timeline-box bg-[linear-gradient(135deg,#0a192f,#0d1b2a)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)] text-lg">
+          <div className="timeline-start text-sm timeline-box bg-[linear-gradient(135deg,#0a192f,#0d1b2a)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
             {skill.title}
           </div>
 

@@ -21,7 +21,7 @@ const SoftSkillsTimeline = ({ skills }) => {
           </div>
 
           <div className="timeline-end timeline-box bg-[linear-gradient(135deg,#0a192f,#0d1b2a)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
-            <p className="text-lg">{skill.title}</p>
+            <p className="text-sm">{skill.title}</p>
           </div>
 
           {index !== skills.length - 1 && <hr className="bg-[#64ffda]" />}
