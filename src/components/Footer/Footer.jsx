@@ -4,10 +4,10 @@ import Navigation from "../Navigation/Navigation";
 
 import myPhoto from "../../assets/images/MyFoto.jpg";
 
-import LinkedIn from "../../assets/images/footerLinkedIn.png";
+import LinkedIn from "../../assets/images/footerLinkedin.png";
 import Telegram from "../../assets/images/footerTelegram.png";
 import Instagram from "../../assets/images/footerInstagram.png";
-import GitHub from "../../assets/images/footerGitHub.png";
+import GitHub from "../../assets/images/footerGithub.png";
 
 const Footer = () => {
   return (
