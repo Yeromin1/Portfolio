@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-import { navItems } from "../../constants/navItems";
-import scrollToSection from "../../utils/scrollToSection";
+import Navigation from "../Navigation/Navigation";
 
 const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
@@ -45,17 +44,10 @@ const MobileNavigation = () => {
       {open && (
         <div className="fixed inset-0 z-40" onClick={() => setOpen(false)}>
           <div className="absolute top-24 w-64 p-4 rounded-r-xl shadow-[10px_0_15px_#fff,_15px_0_30px_#00ffff] bg-section">
-            <nav className="flex flex-col gap-4 text-sm">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-left !text-[18px] font-medium"
-                >
-                  {item.label}
-                </button>
-              ))}
-            </nav>
+            <Navigation
+              className="flex flex-col gap-4 text-sm"
+              buttonClassName="text-left !text-[18px] font-medium"
+            />
           </div>
         </div>
       )}

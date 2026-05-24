@@ -74,7 +74,7 @@ const ContactPage = () => {
           <Motion delay={0.7}>
             <div className="flex justify-center">
               <a
-                className="inline-block px-[35px] py-[14px] bg-[linear-gradient(135deg,_#00ffff,_#00c2ff)] text-[#030A14] font-semibold rounded-[30px] transition-all duration-300 ease-in-out shadow-[0_0_20px_rgba(0,255,255,0.4)] "
+                className="inline-block px-[35px] py-[14px] bg-[linear-gradient(135deg,_#00ffff,_#00c2ff)] text-[#030A14] font-semibold rounded-[30px] transition-all duration-300 ease-in-out shadow-[0_0_20px_rgba(0,255,255,0.4)] flex items-center"
                 href="mailto:yeromin.dmitriy@gmail.com"
                 target="_blank"
                 rel="noreferrer"

@@ -1,12 +1,16 @@
 import { navItems } from "../../constants/navItems";
 import scrollToSection from "../../utils/scrollToSection";
 
-const Navigation = () => {
+const Navigation = ({ className = "", buttonClassName = "" }) => {
   return (
-    <nav className="hidden md:flex gap-4 text-lg font-medium py-[26px]">
-      {navItems.map((item) => (
-        <button key={item.id} onClick={() => scrollToSection(item.id)}>
-          {item.label}
+    <nav className={`${className}`}>
+      {navItems.map(({ id, label }) => (
+        <button
+          className={buttonClassName}
+          key={id}
+          onClick={() => scrollToSection(id)}
+        >
+          {label}
         </button>
       ))}
     </nav>
