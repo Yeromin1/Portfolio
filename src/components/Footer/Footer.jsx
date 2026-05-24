@@ -1,12 +1,13 @@
 import { Motion } from "../../animations/reveal/Motion";
 import { zoomIn } from "../../animations/reveal/variants";
+import Navigation from "../Navigation/Navigation";
 
 import myPhoto from "../../assets/images/MyFoto.jpg";
 
-import LinkedIn from "../../assets/images/linkedin.png";
-import Telegram from "../../assets/images/telegram.png";
-import GitHub from "../../assets/images/github.png";
-import Navigation from "../Navigation/Navigation";
+import LinkedIn from "../../assets/images/footerLinkedIn.png";
+import Telegram from "../../assets/images/footerTelegram.png";
+import Instagram from "../../assets/images/footerInstagram.png";
+import GitHub from "../../assets/images/footerGitHub.png";
 
 const Footer = () => {
   return (
@@ -14,81 +15,92 @@ const Footer = () => {
       <div className="container py-16">
         <div className="grid gap-8">
           <div className="">
-            <Motion variant={zoomIn} delay={0.9}>
+            <Motion variant={zoomIn} delay={0.5}>
               <div className="avatar mx-auto w-24 h-24 mb-6">
                 <div className=" ring-4 ring-[#094165] w-44 rounded-full shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)] md:w-48">
                   <img src={myPhoto} alt="My photo" />
                 </div>
               </div>
             </Motion>
-            <h3 className="text-xl title-shadow mb-3">Dmytro Yeromin</h3>
-            <p className="text-[0.95rem] text-[rgb(207,216,220)]">
-              Frontend Developer
-            </p>
+            <Motion delay={0.1}>
+              <h3 className="text-xl title-shadow mb-3">Dmytro Yeromin</h3>
+            </Motion>
+            <Motion delay={0.3}>
+              <p className="text-[0.95rem] text-[rgb(207,216,220)]">
+                Frontend Developer
+              </p>
+            </Motion>
           </div>
 
           <div className="">
-            <h4 className="text-lg title-shadow mb-3">Connect with me</h4>
+            <Motion delay={0.4}>
+              <h4 className="text-lg title-shadow mb-3">Connect with me</h4>
+            </Motion>
 
             <div className="flex gap-4 justify-center">
-              <Motion delay={0.4}>
+              <Motion delay={0.5}>
                 <a
-                  className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px]"
+                  className=""
                   href="http://www.linkedin.com/in/dmytro-yeromin-2a2933338"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <div className="">
-                    <img
-                      src={LinkedIn}
-                      alt="LinkedIn logo"
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={LinkedIn} alt="LinkedIn logo" className="" />
                   </div>
-                </a>
-              </Motion>
-
-              <Motion delay={0.5}>
-                <a
-                  className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px]"
-                  href="http://t.me/dmytro_yeromin"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={Telegram}
-                    alt="Telegram logo"
-                    className="w-full h-full object-cover"
-                  />
                 </a>
               </Motion>
 
               <Motion delay={0.6}>
                 <a
-                  className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px]"
+                  className=""
+                  href="http://t.me/dmytro_yeromin"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={Telegram} alt="Telegram logo" className="" />
+                </a>
+              </Motion>
+
+              <Motion delay={0.7}>
+                <a
+                  className=""
+                  href="https://www.instagram.com/d.m.i.t.r.i.y_5?igsh=MWJlN2ZpZnE1eTh4eQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={Instagram} alt="Instagram logo" className="" />
+                </a>
+              </Motion>
+
+              <Motion delay={0.8}>
+                <a
+                  className=""
                   href="https://github.com/Yeromin1"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img
-                    src={GitHub}
-                    alt="GitHub logo"
-                    className="w-18 h-18 object-cover"
-                  />
+                  <img src={GitHub} alt="GitHub logo" className="" />
                 </a>
               </Motion>
             </div>
           </div>
 
           <div className="mb-10">
-            <h4 className="text-lg title-shadow mb-3">Quick Links</h4>
-            <Navigation className="grid gap-2" />
+            <Motion delay={0.2}>
+              <h4 className="text-lg title-shadow mb-3">Quick Links</h4>
+            </Motion>
+            <Motion delay={0.4}>
+              <Navigation className="grid gap-2" />
+            </Motion>
           </div>
         </div>
 
-        <div className="pt-[15px] text-[0.85rem] text-[rgb(170,170,170)] tracking-[1px] border-t border-[rgb(35,75,134)]">
-          <p>Copyright &copy; 202 Dmytro Yeromin</p>
-        </div>
+        <Motion delay={0.6}>
+          <div className="pt-[15px] text-[0.85rem] text-[rgb(170,170,170)] tracking-[1px] border-t border-[rgb(35,75,134)]">
+            <p>Copyright &copy; 2026 Dmytro Yeromin</p>
+          </div>
+        </Motion>
       </div>
     </footer>
   );
