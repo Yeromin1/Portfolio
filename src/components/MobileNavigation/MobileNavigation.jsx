@@ -9,7 +9,7 @@ const MobileNavigation = () => {
     <div className="relative block md:hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-12 h-12 flex items-center justify-center rounded-lg   transition"
+        className="w-10 h-10 flex items-center justify-center rounded-lg   transition"
       >
         <div className="relative w-7 h-7 flex items-center justify-center">
           <div

@@ -23,12 +23,13 @@ const ThemeController = () => {
 
   return (
     <div>
-      <label className="w-[50px] h-7 bg-white/10 toggle text-base-content ">
+      <label className="w-[24px] h-[22px]  toggle text-base-content ">
+        {/* <label className="w-[50px] h-7 bg-white/10 toggle text-base-content "></label> */}
         <input
           type="checkbox"
           checked={checked}
           onChange={handleChange}
-          className="theme-controller "
+          className="theme-controller w-[22px]"
         />
 
         {/* sun */}
