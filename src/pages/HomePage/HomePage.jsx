@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <section
       id="home"
-      className="h-screen bg-[#020e26] py-20 relative overflow-hidden md:pt-28 md:h-auto"
+      className="h-screen bg-[#020e26] py-20 relative overflow-hidden md:pt-20 lg:pt-28"
     >
       <div className="container grid gap-[60px] justify-items-center">
         {/* BACKGROUND ANIMATION */}
@@ -28,13 +28,13 @@ const HomePage = () => {
         <Motion delay={0}>
           <div className="bg-white/5 border-2 border-cyan-400/20 rounded-[20px] p-10 shadow-[0_0_25px_rgba(0,255,255,0.08)] md:px-14 md:py-10 ">
             <Motion delay={0.1}>
-              <h1 className="title-shadow font-semibold text-center text-2xl mb-[15px] whitespace-nowrap md:text-[33px] md:leading-[1.41]">
+              <h1 className="title-shadow font-semibold text-center text-2xl mb-[15px] whitespace-nowrap md:text-[33px] md:leading-[1.41] md:text-4xl lg:text-5xl">
                 Hi, I`m Dmytro Yeromin
               </h1>
             </Motion>
 
             <Motion delay={0.3}>
-              <p className="font-medium text-center text-lg text-[#00ffff] mb-10 md:font-semibold md:text-2xl">
+              <p className="font-medium text-center text-lg text-[#00ffff] mb-10 md:font-semibold md:text-2xl lg:text-3xl">
                 Front-end Developer
               </p>
             </Motion>
@@ -45,7 +45,7 @@ const HomePage = () => {
                   href="https://drive.google.com/file/d/1h4-qouIQ6R3Qy-SPucQKDTiGifpGJXNj/view?usp=drive_link"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn px-[25px] py-[10px] animate-[glowPulse_2.5s_ease-in-out_infinite]"
+                  className="btn px-[25px] py-[10px] animate-[glowPulse_2.5s_ease-in-out_infinite] md:text-base lg:text-lg"
                 >
                   View Resume
                 </a>

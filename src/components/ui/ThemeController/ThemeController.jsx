@@ -23,7 +23,7 @@ const ThemeController = () => {
 
   return (
     <div>
-      <label className="w-[24px] h-[22px]  toggle text-base-content ">
+      <label className="w-6 h-[22px] bg-white/10  toggle text-base-content md:hover:translate-y-[-2px] md:hover:shadow-[0_0_25px_#64ffda] language ">
         {/* <label className="w-[50px] h-7 bg-white/10 toggle text-base-content "></label> */}
         <input
           type="checkbox"
