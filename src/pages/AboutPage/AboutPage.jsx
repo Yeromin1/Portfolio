@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import { Motion } from "../../animations/reveal/Motion";
 import { zoomIn } from "../../animations/reveal/variants";
@@ -7,6 +8,8 @@ import myPhoto from "../../assets/images/MyFoto.jpg";
 
 const AboutPage = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="bg-section">
       <div className="container py-20">
@@ -24,24 +27,15 @@ const AboutPage = () => {
           <Motion delay={0.3}>
             <div className="grid gap-1 justify-items-center">
               <h2 className="text-4xl font-semibold title-shadow mb-3">
-                About Me
+                {t("about.title")}
               </h2>
-              <p className="text-lg leading-relaxed">
-                I create modern web interfaces that look stylish, perform fast,
-                and deliver real value to users.
-              </p>
+              <p className="text-lg leading-relaxed">{t("about.desc1")}</p>
 
               {isOpen && (
                 <>
-                  <p className="text-lg leading-relaxed">
-                    I work with HTML, CSS, Tailwind, JavaScript, and React,
-                    focusing on details, UX, and performance. I enjoy building
-                    interfaces that don`t just work, but feel intuitive,
-                    comfortable, and well thought out.
-                  </p>
+                  <p className="text-lg leading-relaxed">{t("about.desc2")}</p>
                   <p className="text-lg leading-relaxed mb-4">
-                    My goal is to help companies present themselves as modern
-                    and confident in the digital space.
+                    {t("about.desc3")}
                   </p>
                 </>
               )}
@@ -50,7 +44,7 @@ const AboutPage = () => {
                 onClick={() => setIsOpen((prev) => !prev)}
                 className="btn py-[10px] px-[25px]"
               >
-                {isOpen ? "Read Less" : "Read More"}
+                {isOpen ? t("about.readLess") : t("about.readMore")}
               </button>
             </div>
           </Motion>
@@ -63,14 +57,9 @@ const AboutPage = () => {
               className="collapse  shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">
-                How do you approach UI development?
-              </summary>
-              <div className="collapse-content text-sm leading-relaxed">
-                I start by analyzing the design and requirements, then structure
-                the components and plan responsiveness. After that, I implement
-                the UI step by step, focusing on clean, scalable code and good
-                user experience.
+              <summary className="p-4 font-semibold">{t("about.q1")}</summary>
+              <div className="collapse-content text-sm leading-relaxed tracking-wide">
+                {t("about.a1")}
               </div>
             </details>
 
@@ -78,13 +67,9 @@ const AboutPage = () => {
               className="collapse shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">
-                What technologies do you work with?
-              </summary>
-              <div className="collapse-content text-sm leading-relaxed">
-                I work with HTML, CSS, JavaScript, and React. I also use
-                Tailwind CSS, Redux, React Hook Form, Yup, and integrate REST
-                APIs when needed.
+              <summary className="p-4 font-semibold">{t("about.q2")}</summary>
+              <div className="collapse-content text-sm leading-relaxed tracking-wide">
+                {t("about.a2")}
               </div>
             </details>
 
@@ -92,14 +77,9 @@ const AboutPage = () => {
               className="collapse shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">
-                How do you solve complex technical problems?
-              </summary>
-              <div className="collapse-content text-sm leading-relaxed">
-                I first isolate the issue and reproduce it, then analyze errors
-                using DevTools or logs. I break the problem into smaller parts
-                and test solutions step by step. If needed, I consult
-                documentation or trusted resources.
+              <summary className="p-4 font-semibold">{t("about.q3")}</summary>
+              <div className="collapse-content text-sm leading-relaxed tracking-wide">
+                {t("about.a3")}
               </div>
             </details>
 
@@ -107,13 +87,9 @@ const AboutPage = () => {
               className="collapse shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">
-                Why are you a good fit for this role?
-              </summary>
-              <div className="collapse-content text-sm leading-relaxed">
-                I adapt quickly to new technologies, write clean and
-                maintainable code, and focus on delivering results. I also have
-                experience working on team projects in a structured workflow.
+              <summary className="p-4 font-semibold">{t("about.q4")}</summary>
+              <div className="collapse-content text-sm leading-relaxed tracking-wide">
+                {t("about.a4")}
               </div>
             </details>
 
@@ -121,13 +97,9 @@ const AboutPage = () => {
               className="collapse shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">
-                How do you work in a team?
-              </summary>
-              <div className="collapse-content text-sm leading-relaxed">
-                I communicate clearly, stay open to feedback, and follow agreed
-                deadlines. I believe good communication and responsibility are
-                key to successful teamwork.
+              <summary className="p-4 font-semibold">{t("about.q5")}</summary>
+              <div className="collapse-content text-sm leading-relaxed tracking-wide">
+                {t("about.a5")}
               </div>
             </details>
           </div>

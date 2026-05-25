@@ -1,0 +1,26 @@
+{
+  "about": {
+    "title": "About Me",
+    "desc1": "I create modern web interfaces that look stylish, work fast, and provide real value to users.",
+    "desc2": "I work with HTML, CSS, Tailwind, JavaScript, and React, focusing on details, user experience, and performance. I enjoy building interfaces that are not only functional but also intuitive, user-friendly, and well thought out.",
+    "desc3": "My goal is to help companies present themselves as modern and confident in the digital space by creating a strong and attractive online presence.",
+
+    "readMore": "Read more",
+    "readLess": "Read less",
+
+    "q1": "How do you approach UI development?",
+    "a1": "I start by analyzing the design and requirements, then structure components and plan responsiveness. After that, I implement the user interface step by step, focusing on clean, scalable code and a high-quality user experience.",
+
+    "q2": "What technologies do you work with?",
+    "a2": "I work with HTML, CSS, JavaScript, and React. I also use Tailwind CSS, Redux, React Hook Form, Yup, and integrate REST APIs when needed.",
+
+    "q3": "How do you solve complex technical problems?",
+    "a3": "First, I identify the problem and reproduce it, then analyze errors using DevTools or logs. I break the problem into smaller parts and test solutions step by step. If necessary, I refer to documentation or trusted resources.",
+
+    "q4": "Why are you a good fit for this role?",
+    "a4": "I adapt quickly to new technologies, write clean and maintainable code, and focus on delivering results. I also have experience working on team projects in a structured workflow.",
+
+    "q5": "How do you work in a team?",
+    "a5": "I work effectively in a team, am open to discussing ideas and feedback. I always try to communicate clearly, align tasks, and take responsibility for my part of the work. If needed, I’m ready to help colleagues and quickly adapt to changes in the project."
+  }
+}
