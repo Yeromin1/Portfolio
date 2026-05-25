@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import ImageLightbox from "../../components/lightbox/ImageLightbox";
+import ImageLightbox from "../../components/ui/lightbox/ImageLightbox";
 import { Motion } from "../../animations/reveal/Motion";
 import { fadeUp } from "../../animations/reveal/variants";
 
