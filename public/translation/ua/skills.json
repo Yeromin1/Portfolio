@@ -1,0 +1,26 @@
+{
+  "title": "Мої Навички",
+
+  "tech": {
+    "title": "Технічні навички",
+    "html": "HTML",
+    "css": "CSS",
+    "javascript": "JavaScript",
+    "react": "React.js",
+    "node": "Node.js",
+    "git": "Git",
+    "vite": "Vite",
+    "mongodb": "MongoDB"
+  },
+
+  "soft": {
+    "title": "Софт-скіли",
+    "timeManagement": "Тайм-менеджмент",
+    "criticalThinking": "Критичне мислення",
+    "responsibility": "Відповідальність",
+    "negotiation": "Переговори",
+    "attentionToDetail": "Уважність до деталей",
+    "communication": "Комунікація",
+    "teamwork": "Командна робота"
+  }
+}

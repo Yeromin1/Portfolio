@@ -1,0 +1,26 @@
+{
+  "title": "My Skills",
+
+  "tech": {
+    "title": "Tech Skills",
+    "html": "HTML",
+    "css": "CSS",
+    "javascript": "JavaScript",
+    "react": "React.js",
+    "node": "Node.js",
+    "git": "Git",
+    "vite": "Vite",
+    "mongodb": "MongoDB"
+  },
+
+  "soft": {
+    "title": "Soft Skills",
+    "timeManagement": "Time Management",
+    "criticalThinking": "Critical Thinking",
+    "responsibility": "Responsibility",
+    "negotiation": "Negotiation",
+    "attentionToDetail": "Attention to Detail",
+    "communication": "Communication",
+    "teamwork": "Teamwork"
+  }
+}

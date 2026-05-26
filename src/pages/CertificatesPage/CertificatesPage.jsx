@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import ImageLightbox from "../../components/ui/lightbox/ImageLightbox";
 import { Motion } from "../../animations/reveal/Motion";
@@ -10,12 +11,15 @@ import certificates from "../../assets/images/Certificatesss.jpeg";
 const CertificatesPage = () => {
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const { t } = useTranslation("certificates");
+
   return (
     <section id="certificates" className="bg-section overflow-hidden">
       <div className="container py-20">
         <Motion delay={0}>
           <h2 className="text-4xl font-semibold title-shadow text-center mb-8">
-            My Certificates
+            {t("title")}
           </h2>
         </Motion>
 
@@ -35,12 +39,10 @@ const CertificatesPage = () => {
               </figure>
               <div className="flex flex-col flex-1 text-center justify-between">
                 <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda]">
-                  Fullstack Developer
+                  {t("goit.title")}
                 </h4>
                 <p className="text-sm leading-relaxed text-gray-300">
-                  Successfully completed the Fullstack Developer course at GoIT,
-                  gaining practical skills in developing modern web applications
-                  using Frontend and Backend technologies.
+                  {t("goit.description")}
                 </p>
               </div>
             </div>
@@ -61,11 +63,10 @@ const CertificatesPage = () => {
               </figure>
               <div className="flex flex-col flex-1 text-center justify-between">
                 <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda]">
-                  Power of Leadership
+                  {t("abinbev.title")}
                 </h4>
                 <p className="text-sm leading-relaxed text-gray-300">
-                  Successfully completed the business training Power of
-                  Leadership and gained knowledge in leadership and management.
+                  {t("abinbev.description")}
                 </p>
               </div>
             </div>

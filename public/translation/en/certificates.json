@@ -1,0 +1,13 @@
+{
+  "title": "My Certificates",
+
+  "goit": {
+    "title": "Fullstack Developer",
+    "description": "Successfully completed the Fullstack Developer course at GoIT, gaining practical skills in developing modern web applications using Frontend and Backend technologies."
+  },
+
+  "abinbev": {
+    "title": "Power of Leadership",
+    "description": "Successfully completed the business training Power of Leadership and gained knowledge in leadership and management."
+  }
+}
