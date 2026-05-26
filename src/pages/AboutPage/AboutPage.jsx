@@ -8,7 +8,7 @@ import myPhoto from "../../assets/images/MyFoto.jpg";
 
 const AboutPage = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { t } = useTranslation();
+  const { t } = useTranslation("about");
 
   return (
     <section id="about" className="bg-section">
@@ -27,16 +27,14 @@ const AboutPage = () => {
           <Motion delay={0.3}>
             <div className="grid gap-1 justify-items-center">
               <h2 className="text-4xl font-semibold title-shadow mb-3">
-                {t("about.title")}
+                {t("title")}
               </h2>
-              <p className="text-lg leading-relaxed">{t("about.desc1")}</p>
+              <p className="text-lg leading-relaxed">{t("intro")}</p>
 
               {isOpen && (
                 <>
-                  <p className="text-lg leading-relaxed">{t("about.desc2")}</p>
-                  <p className="text-lg leading-relaxed mb-4">
-                    {t("about.desc3")}
-                  </p>
+                  <p className="text-lg leading-relaxed">{t("description")}</p>
+                  <p className="text-lg leading-relaxed mb-4">{t("goal")}</p>
                 </>
               )}
 
@@ -44,7 +42,7 @@ const AboutPage = () => {
                 onClick={() => setIsOpen((prev) => !prev)}
                 className="btn py-[10px] px-[25px]"
               >
-                {isOpen ? t("about.readLess") : t("about.readMore")}
+                {isOpen ? t("readLess") : t("readMore")}
               </button>
             </div>
           </Motion>
@@ -57,9 +55,11 @@ const AboutPage = () => {
               className="collapse  shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">{t("about.q1")}</summary>
+              <summary className="p-4 font-semibold">
+                {t("faq.uiApproach.question")}
+              </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide">
-                {t("about.a1")}
+                {t("faq.uiApproach.answer")}
               </div>
             </details>
 
@@ -67,9 +67,11 @@ const AboutPage = () => {
               className="collapse shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">{t("about.q2")}</summary>
+              <summary className="p-4 font-semibold">
+                {t("faq.technologies.question")}
+              </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide">
-                {t("about.a2")}
+                {t("faq.technologies.answer")}
               </div>
             </details>
 
@@ -77,9 +79,11 @@ const AboutPage = () => {
               className="collapse shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">{t("about.q3")}</summary>
+              <summary className="p-4 font-semibold">
+                {t("faq.problemSolving.question")}
+              </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide">
-                {t("about.a3")}
+                {t("faq.problemSolving.answer")}
               </div>
             </details>
 
@@ -87,9 +91,11 @@ const AboutPage = () => {
               className="collapse shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">{t("about.q4")}</summary>
+              <summary className="p-4 font-semibold">
+                {t("faq.fitRole.question")}
+              </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide">
-                {t("about.a4")}
+                {t("faq.fitRole.answer")}
               </div>
             </details>
 
@@ -97,9 +103,11 @@ const AboutPage = () => {
               className="collapse shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold">{t("about.q5")}</summary>
+              <summary className="p-4 font-semibold">
+                {t("faq.teamWork.question")}
+              </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide">
-                {t("about.a5")}
+                {t("faq.teamWork.answer")}
               </div>
             </details>
           </div>

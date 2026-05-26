@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App.jsx";
 import "modern-normalize";
-import "./translation/pages/i18n.js";
+import "./i18n.js";
 
 import "./index.css";
 

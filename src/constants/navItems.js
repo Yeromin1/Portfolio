@@ -1,8 +1,8 @@
 export const navItems = [
-  { id: "home", label: "Home" },
-  { id: "about", label: "About" },
-  { id: "projects", label: "Projects" },
-  { id: "certificates", label: "Certificates" },
-  { id: "skills", label: "Skills" },
-  { id: "contact", label: "Contact" },
+  { id: "home" },
+  { id: "about" },
+  { id: "projects" },
+  { id: "certificates" },
+  { id: "skills" },
+  { id: "contact" },
 ];

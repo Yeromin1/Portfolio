@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import myPhoto from "../../assets/images/MyFoto.jpg";
 
 import { Motion } from "../../animations/reveal/Motion";
@@ -5,6 +7,7 @@ import { zoomIn } from "../../animations/reveal/variants";
 import { FloatingCircle } from "../../animations/motion/floating";
 
 const HomePage = () => {
+  const { t } = useTranslation("home");
   return (
     <section
       id="home"
@@ -29,13 +32,13 @@ const HomePage = () => {
           <div className="bg-white/5 border-2 border-cyan-400/20 rounded-[20px] p-10 shadow-[0_0_25px_rgba(0,255,255,0.08)] md:px-14 md:py-10 ">
             <Motion delay={0.1}>
               <h1 className="title-shadow font-semibold text-center text-2xl mb-[15px] whitespace-nowrap md:text-[33px] md:leading-[1.41] md:text-4xl lg:text-5xl">
-                Hi, I`m Dmytro Yeromin
+                {t("title")}
               </h1>
             </Motion>
 
             <Motion delay={0.3}>
               <p className="font-medium text-center text-lg text-[#00ffff] mb-10 md:font-semibold md:text-2xl lg:text-3xl">
-                Front-end Developer
+                {t("position")}
               </p>
             </Motion>
 
@@ -47,7 +50,7 @@ const HomePage = () => {
                   rel="noreferrer"
                   className="btn px-[25px] py-[10px] animate-[glowPulse_2.5s_ease-in-out_infinite] md:text-base lg:text-lg"
                 >
-                  View Resume
+                  {t("viewResume")}
                 </a>
               </div>
             </Motion>

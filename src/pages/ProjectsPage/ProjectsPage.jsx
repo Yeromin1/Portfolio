@@ -1,18 +1,24 @@
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
+
 import { Motion } from "../../animations/reveal/Motion";
 import { fadeUp } from "../../animations/reveal/variants";
+
 import projects from "../../data/projects";
 import { useAutoCarousel } from "../../hooks/useAutoCarousel";
 
 const ProjectsPage = () => {
+  const { t } = useTranslation("projects");
   const carouselRef = useRef(null);
+
   useAutoCarousel(carouselRef);
+
   return (
     <section id="projects" className="bg-section">
       <div className="container py-20">
         <Motion delay={0.1}>
           <h2 className="text-4xl font-semibold title-shadow text-center mb-8">
-            My Projects
+            {t("title")}
           </h2>
         </Motion>
 
@@ -41,10 +47,10 @@ const ProjectsPage = () => {
                     <div className="flex flex-col flex-1 text-center justify-between">
                       <div className="mb-4 ">
                         <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda]">
-                          {project.title}
+                          {t(`projects.${project.key}.title`)}
                         </h4>
                         <p className="text-sm leading-relaxed text-gray-300">
-                          {project.description}
+                          {t(`projects.${project.key}.description`)}
                         </p>
                       </div>
 
@@ -55,7 +61,7 @@ const ProjectsPage = () => {
                           rel="noreferrer"
                           className="btn py-2 px-3"
                         >
-                          GitHub Code
+                          {t("githubCode")}
                         </a>
 
                         <a
@@ -64,7 +70,7 @@ const ProjectsPage = () => {
                           rel="noreferrer"
                           className="btn py-2 px-3"
                         >
-                          Live Preview
+                          {t("livePreview")}
                         </a>
                       </div>
                     </div>
