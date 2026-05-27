@@ -16,9 +16,9 @@ const CertificatesPage = () => {
 
   return (
     <section id="certificates" className="bg-section overflow-hidden">
-      <div className="container py-20">
+      <div className="container py-20 md:py-24">
         <Motion delay={0}>
-          <h2 className="text-4xl font-semibold title-shadow text-center mb-8">
+          <h2 className="text-4xl font-semibold title-shadow text-center mb-8 md:text-[38px]">
             {t("title")}
           </h2>
         </Motion>
@@ -38,10 +38,10 @@ const CertificatesPage = () => {
                 />
               </figure>
               <div className="flex flex-col flex-1 text-center justify-between">
-                <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda]">
+                <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda] md:text-3xl">
                   {t("goit.title")}
                 </h4>
-                <p className="text-sm leading-relaxed text-gray-300">
+                <p className="text-sm leading-relaxed text-gray-300 md:text-base">
                   {t("goit.description")}
                 </p>
               </div>
@@ -62,10 +62,10 @@ const CertificatesPage = () => {
                 />
               </figure>
               <div className="flex flex-col flex-1 text-center justify-between">
-                <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda]">
+                <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda] md:text-3xl">
                   {t("abinbev.title")}
                 </h4>
-                <p className="text-sm leading-relaxed text-gray-300">
+                <p className="text-sm leading-relaxed text-gray-300 md:text-base">
                   {t("abinbev.description")}
                 </p>
               </div>

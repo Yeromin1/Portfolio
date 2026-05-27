@@ -128,25 +128,28 @@ summary {
   transition: all 0.3s ease;
 }
 
-.btn:hover,
-.btn:active {
-  background: #64ffda;
-  color: #03101a;
-  box-shadow:
-    0 0 20px #64ffda,
-    0 0 35px #00bfff;
-}
+/*------------@media-768px-------------*/
+@media (min-width: 768px) {
+  .btn:hover,
+  .btn:active {
+    background: #64ffda;
+    color: #03101a;
+    box-shadow:
+      0 0 20px #64ffda,
+      0 0 35px #00bfff;
+  }
 
-.nav,
-.language {
-  transition: all 300ms ease;
-}
+  .nav,
+  .language {
+    transition: all 300ms ease;
+  }
 
-.nav:hover,
-.nav:active {
-  color: #64ffda;
-  text-shadow:
-    0 0 20px #64ffda,
-    0 0 35px #00bfff;
-  transform: translateY(-2px);
+  .nav:hover,
+  .nav:active {
+    color: #64ffda;
+    text-shadow:
+      0 0 20px #64ffda,
+      0 0 35px #00bfff;
+    transform: translateY(-2px);
+  }
 }

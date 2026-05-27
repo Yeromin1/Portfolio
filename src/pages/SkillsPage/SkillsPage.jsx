@@ -12,9 +12,9 @@ const SkillsPage = () => {
 
   return (
     <section id="skills" className="bg-section overflow-hidden">
-      <div className="container py-20">
+      <div className="container py-20 md:py-24">
         <Motion delay={0.1}>
-          <h2 className="text-4xl font-semibold title-shadow text-center mb-8">
+          <h2 className="text-4xl font-semibold title-shadow text-center mb-8 md:text-[38px]">
             {t("title")}
           </h2>
         </Motion>
@@ -22,7 +22,7 @@ const SkillsPage = () => {
         <div className="flex flex-col md:flex-row gap-10 justify-center">
           <div>
             <Motion delay={0.3}>
-              <h4 className="text-center text-lg font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86]">
+              <h4 className="text-center text-lg font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86] md:text-xl">
                 {t("tech.title")}
               </h4>
             </Motion>
@@ -39,7 +39,7 @@ const SkillsPage = () => {
 
           <div>
             <Motion delay={0.3}>
-              <h4 className="text-center text-lg font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86]">
+              <h4 className="text-center text-lg font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86] md:text-xl">
                 {t("soft.title")}
               </h4>
             </Motion>

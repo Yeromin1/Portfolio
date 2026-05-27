@@ -11,9 +11,9 @@ const HomePage = () => {
   return (
     <section
       id="home"
-      className="h-screen bg-[#020e26] py-20 relative overflow-hidden md:pt-20 lg:pt-28"
+      className="h-screen bg-[#020e26] py-20 relative overflow-hidden md:pt-24 lg:pt-28"
     >
-      <div className="container grid gap-[60px] justify-items-center">
+      <div className="container grid gap-[60px] justify-items-center md:gap-8">
         {/* BACKGROUND ANIMATION */}
         <FloatingCircle
           className="absolute top-[-80px] left-[-80px] w-[180px] h-[180px] bg-cyan-400/10 rounded-full blur-xl"
@@ -37,7 +37,7 @@ const HomePage = () => {
             </Motion>
 
             <Motion delay={0.3}>
-              <p className="font-medium text-center text-lg text-[#00ffff] mb-10 md:font-semibold md:text-2xl lg:text-3xl">
+              <p className="font-medium text-center text-lg text-[#00ffff] mb-10 md:font-semibold md:text-2xl  lg:text-3xl">
                 {t("position")}
               </p>
             </Motion>

@@ -15,9 +15,9 @@ const ProjectsPage = () => {
 
   return (
     <section id="projects" className="bg-section">
-      <div className="container py-20">
+      <div className="container py-20 md:py-24">
         <Motion delay={0.1}>
-          <h2 className="text-4xl font-semibold title-shadow text-center mb-8">
+          <h2 className="text-4xl font-semibold title-shadow text-center mb-8 md:text-[38px]">
             {t("title")}
           </h2>
         </Motion>
@@ -46,7 +46,7 @@ const ProjectsPage = () => {
 
                     <div className="flex flex-col flex-1 text-center justify-between">
                       <div className="mb-4 ">
-                        <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda]">
+                        <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda] ">
                           {t(`projects.${project.key}.title`)}
                         </h4>
                         <p className="text-sm leading-relaxed text-gray-300">
