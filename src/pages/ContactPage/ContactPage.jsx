@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import { Motion } from "../../animations/reveal/Motion";
 
 import LinkedIn from "../../assets/images/linkedin.png";
@@ -5,6 +7,8 @@ import Telegram from "../../assets/images/telegram.png";
 import GitHub from "../../assets/images/github.png";
 
 const ContactPage = () => {
+  const { t } = useTranslation("contact");
+
   return (
     <section id="contact" className="bg-section">
       <div className="container py-20 ">
@@ -12,14 +16,13 @@ const ContactPage = () => {
           <div className="bg-[rgba(255,255,255,0.03)] border border-[rgba(0,255,255,0.2)] rounded-[20px] shadow-[0_0_30px_rgba(0,255,255,0.08)] py-[60px] px-10">
             <Motion delay={0.1}>
               <h2 className=" text-center text-[42px] font-bold text-[#00ffff] mb-4 tracking-[1px]">
-                Get in Touch
+                {t("title")}
               </h2>
             </Motion>
 
             <Motion delay={0.3}>
               <p className="text-[#b8c2cc] leading-relaxed mb-9 text-center">
-                I`m always open to discuss your project or collaboration.
-                Connect with me through social media or send me a message!
+                {t("description")}
               </p>
             </Motion>
 
@@ -80,7 +83,7 @@ const ContactPage = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Contact Me
+                  {t("linkText")}
                 </a>
               </div>
             </Motion>

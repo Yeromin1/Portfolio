@@ -8,8 +8,11 @@ import LinkedIn from "../../assets/images/footerLinkedin.png";
 import Telegram from "../../assets/images/footerTelegram.png";
 import Instagram from "../../assets/images/footerInstagram.png";
 import GitHub from "../../assets/images/footerGithub.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation("footer");
+
   return (
     <footer className=" bg-[rgb(3,10,20)] text-center shadow-[0_-5px_25px_rgba(100,255,218,0.2)] border-t-2 border-white">
       <div className="container py-16">
@@ -23,18 +26,20 @@ const Footer = () => {
               </div>
             </Motion>
             <Motion delay={0.1}>
-              <h3 className="text-xl title-shadow mb-3">Dmytro Yeromin</h3>
+              <h3 className="text-xl title-shadow mb-3">{t("title")}</h3>
             </Motion>
             <Motion delay={0.3}>
               <p className="text-[0.95rem] text-[rgb(207,216,220)]">
-                Frontend Developer
+                {t("position")}
               </p>
             </Motion>
           </div>
 
           <div className="">
             <Motion delay={0.4}>
-              <h4 className="text-lg title-shadow mb-3">Connect with me</h4>
+              <h4 className="text-lg title-shadow mb-3">
+                {t("connectWithMe")}
+              </h4>
             </Motion>
 
             <div className="flex gap-4 justify-center">
@@ -88,7 +93,7 @@ const Footer = () => {
 
           <div className="mb-10">
             <Motion delay={0.2}>
-              <h4 className="text-lg title-shadow mb-3">Quick Links</h4>
+              <h4 className="text-lg title-shadow mb-3">{t("quickLinks")}</h4>
             </Motion>
             <Motion delay={0.4}>
               <Navigation className="grid gap-2" />
@@ -98,7 +103,9 @@ const Footer = () => {
 
         <Motion delay={0.6}>
           <div className="pt-[15px] text-[0.85rem] text-[rgb(170,170,170)] tracking-[1px] border-t border-[rgb(35,75,134)]">
-            <p>Copyright &copy; 2026 Dmytro Yeromin</p>
+            <p>
+              {t("copyright")} &copy; 2026 {t("title")}
+            </p>
           </div>
         </Motion>
       </div>
