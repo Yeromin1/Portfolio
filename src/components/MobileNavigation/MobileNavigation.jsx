@@ -11,7 +11,7 @@ const MobileNavigation = () => {
         onClick={() => setOpen(!open)}
         className="w-10 h-10 flex items-center justify-center rounded-lg   transition"
       >
-        <div className="relative w-7 h-7 flex items-center justify-center">
+        <div className="relative w-5 h-5 flex items-center justify-center">
           <div
             className={`absolute inset-0 grid grid-cols-2 gap-1 transition-all duration-700 ${
               open
@@ -19,14 +19,14 @@ const MobileNavigation = () => {
                 : "opacity-100 scale-100 rotate-0"
             }`}
           >
-            <span className="w-2 h-2 bg-white rounded-full"></span>
-            <span className="w-2 h-2 bg-white rounded-full"></span>
-            <span className="w-2 h-2 bg-white rounded-full"></span>
-            <span className="w-2 h-2 bg-white rounded-full"></span>
+            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
+            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
+            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
+            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
           </div>
 
           <svg
-            className={`absolute w-10 h-10 transition-all duration-700 ${
+            className={`absolute w-8 h-8 transition-all duration-700 ${
               open
                 ? "opacity-100 scale-100 rotate-0"
                 : "opacity-0 scale-75 -rotate-90"

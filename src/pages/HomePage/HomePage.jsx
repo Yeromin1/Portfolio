@@ -29,9 +29,9 @@ const HomePage = () => {
 
         {/* CONTENT */}
         <Motion delay={0}>
-          <div className="bg-white/5 border-2 border-cyan-400/20 rounded-[20px] p-10 shadow-[0_0_25px_rgba(0,255,255,0.08)] md:px-14 md:py-10 ">
+          <div className="bg-white/5 border-2 border-cyan-400/20 rounded-[20px] p-10 px-7 shadow-[0_0_25px_rgba(0,255,255,0.08)] md:px-14 md:py-10 ">
             <Motion delay={0.1}>
-              <h1 className="title-shadow font-semibold text-center text-2xl mb-[15px] whitespace-nowrap md:text-[33px] md:leading-[1.41] md:text-4xl lg:text-5xl">
+              <h1 className="title-shadow font-medium text-center text-2xl mb-[15px] whitespace-nowrap md:text-[33px] md:leading-[1.41] md:text-4xl lg:text-5xl">
                 {t("title")}
               </h1>
             </Motion>
