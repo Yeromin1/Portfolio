@@ -11,9 +11,9 @@ const ContactPage = () => {
 
   return (
     <section id="contact" className="bg-section">
-      <div className="container py-20 ">
+      <div className="container py-20 md:py-28">
         <Motion delay={0.1}>
-          <div className="bg-[rgba(255,255,255,0.03)] border border-[rgba(0,255,255,0.2)] rounded-[20px] shadow-[0_0_30px_rgba(0,255,255,0.08)] py-[60px] px-10">
+          <div className="bg-[rgba(255,255,255,0.03)] border border-[rgba(0,255,255,0.2)] rounded-[20px] shadow-[0_0_30px_rgba(0,255,255,0.08)] py-[60px] px-10 md:w-[90%] md:mx-auto">
             <Motion delay={0.1}>
               <h2 className=" text-center text-[42px] font-bold text-[#00ffff] mb-4 tracking-[1px]">
                 {t("title")}
@@ -26,7 +26,7 @@ const ContactPage = () => {
               </p>
             </Motion>
 
-            <div className="flex gap-4 justify-center mb-6">
+            <div className="flex gap-4 justify-center mb-6 md:gap-6 md:mb-8">
               <Motion delay={0.4}>
                 <a
                   className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px]"

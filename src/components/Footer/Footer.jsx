@@ -15,8 +15,8 @@ const Footer = () => {
 
   return (
     <footer className=" bg-[rgb(3,10,20)] text-center shadow-[0_-5px_25px_rgba(100,255,218,0.2)] border-t-2 border-white">
-      <div className="container py-16">
-        <div className="grid gap-8">
+      <div className="container py-16 pb-6">
+        <div className="grid gap-8 md:flex md:justify-around ">
           <div className="">
             <Motion variant={zoomIn} delay={0.5}>
               <div className="avatar mx-auto w-24 h-24 mb-6">
@@ -37,7 +37,7 @@ const Footer = () => {
 
           <div className="">
             <Motion delay={0.4}>
-              <h4 className="text-lg title-shadow mb-3">
+              <h4 className="text-lg title-shadow mb-3 md:text-xl">
                 {t("connectWithMe")}
               </h4>
             </Motion>
@@ -91,12 +91,14 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mb-10">
+          <div className="mb-10 md:mb-6">
             <Motion delay={0.2}>
-              <h4 className="text-lg title-shadow mb-3">{t("quickLinks")}</h4>
+              <h4 className="text-lg title-shadow mb-3 md:text-xl">
+                {t("quickLinks")}
+              </h4>
             </Motion>
             <Motion delay={0.4}>
-              <Navigation className="grid gap-2" />
+              <Navigation className="grid gap-2 md:gap-3" />
             </Motion>
           </div>
         </div>

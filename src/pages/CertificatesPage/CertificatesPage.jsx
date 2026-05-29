@@ -23,9 +23,9 @@ const CertificatesPage = () => {
           </h2>
         </Motion>
 
-        <div className="grid gap-7">
+        <div className="grid gap-7 md:gap-9">
           <Motion variant={fadeUp} delay={0.3}>
-            <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full">
+            <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full md:w-[70%] md:mx-auto">
               <figure className="w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
                 <img
                   src={certificateImg}
@@ -49,7 +49,7 @@ const CertificatesPage = () => {
           </Motion>
 
           <Motion variant={fadeUp} delay={0.4}>
-            <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full">
+            <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full md:w-[70%] md:mx-auto">
               <figure className="w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
                 <img
                   src={certificates}

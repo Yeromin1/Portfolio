@@ -25,7 +25,7 @@ const AboutPage = () => {
           </Motion>
 
           <Motion delay={0.3}>
-            <div className="grid gap-1 justify-items-center md:gap-2">
+            <div className="grid gap-1 justify-items-center md:gap-2 md:w-[90%] md:mx-auto">
               <h2 className="text-4xl font-semibold title-shadow mb-3 md:text-[38px]">
                 {t("title")}
               </h2>
@@ -56,7 +56,7 @@ const AboutPage = () => {
 
         {/* ✨ accordion*/}
         <Motion delay={0.4}>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 md:w-[90%] md:mx-auto">
             <details
               className="collapse  shadow-[0_2px_10px_#64ffda]"
               name="my-accordion-det-1"
