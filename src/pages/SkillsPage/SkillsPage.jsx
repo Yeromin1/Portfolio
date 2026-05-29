@@ -6,9 +6,13 @@ import SoftSkillsTimeline from "../../components/SkillsTimeline/SoftSkillsTimeli
 import TechSkillsTimeline from "../../components/SkillsTimeline/TechSkillsTimeline";
 
 import { techSkills, softSkills } from "../../data/skills";
+import useTranslateSkills from "../../hooks/useTranslateSkills ";
 
 const SkillsPage = () => {
   const { t } = useTranslation("skills");
+
+  const translatedSoftSkills = useTranslateSkills(softSkills, "soft");
+  const translatedTechSkills = useTranslateSkills(techSkills, "tech");
 
   return (
     <section id="skills" className="bg-section overflow-hidden">
@@ -19,7 +23,7 @@ const SkillsPage = () => {
           </h2>
         </Motion>
 
-        <div className="flex flex-col md:flex-row gap-10 justify-center">
+        <div className="flex flex-col md:flex-row gap-10 justify-center md:gap-12">
           <div>
             <Motion delay={0.3}>
               <h4 className="text-center text-lg font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86] md:text-xl">
@@ -28,12 +32,7 @@ const SkillsPage = () => {
             </Motion>
 
             <Motion delay={0.5}>
-              <TechSkillsTimeline
-                skills={techSkills.map((skill) => ({
-                  ...skill,
-                  title: t(`tech.${skill.key}`),
-                }))}
-              />
+              <TechSkillsTimeline skills={translatedTechSkills} />
             </Motion>
           </div>
 
@@ -45,12 +44,7 @@ const SkillsPage = () => {
             </Motion>
 
             <Motion delay={0.5}>
-              <SoftSkillsTimeline
-                skills={softSkills.map((skill) => ({
-                  ...skill,
-                  title: t(`soft.${skill.key}`),
-                }))}
-              />
+              <SoftSkillsTimeline skills={translatedSoftSkills} />
             </Motion>
           </div>
         </div>

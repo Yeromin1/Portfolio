@@ -1,11 +1,11 @@
 const SoftSkillsTimeline = ({ skills }) => {
   return (
-    <ul className="timeline timeline-vertical">
+    <ul className="timeline timeline-vertical md:max-w-[215px]">
       {skills.map((skill, index) => (
         <li key={skill.id}>
-          {index !== 0 && <hr className="bg-[#64ffda]" />}
+          {index !== 0 && <hr className="bg-[#64ffda] md:-translate-x-22" />}
 
-          <div className="timeline-middle text-[#64ffda]">
+          <div className="timeline-middle text-[#64ffda] md:-translate-x-22">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -20,11 +20,13 @@ const SoftSkillsTimeline = ({ skills }) => {
             </svg>
           </div>
 
-          <div className="timeline-end timeline-box bg-[linear-gradient(135deg,#0a192f,#0d1b2a)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
-            <p className="text-sm">{skill.title}</p>
+          <div className="timeline-end timeline-box md:-translate-x-22 bg-[linear-gradient(135deg,#0a192f,#0d1b2a)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
+            <p className="text-sm md:whitespace-nowrap">{skill.title}</p>
           </div>
 
-          {index !== skills.length - 1 && <hr className="bg-[#64ffda]" />}
+          {index !== skills.length - 1 && (
+            <hr className="bg-[#64ffda] md:-translate-x-22" />
+          )}
         </li>
       ))}
     </ul>
