@@ -37,7 +37,7 @@ const Footer = () => {
 
           <div className="">
             <Motion delay={0.4}>
-              <h4 className="text-lg title-shadow mb-3 md:text-xl">
+              <h4 className="text-lg title-shadow mb-3 md:text-xl lg:mb-5 xl:mb-6 ">
                 {t("connectWithMe")}
               </h4>
             </Motion>

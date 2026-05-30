@@ -29,7 +29,7 @@ const ContactPage = () => {
             <div className="flex gap-4 justify-center mb-6 md:gap-6 md:mb-8 lg:gap-8 lg:mb-10">
               <Motion delay={0.4}>
                 <a
-                  className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px]  transition-all duration-300 md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
+                  className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px] md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
                   href="http://www.linkedin.com/in/dmytro-yeromin-2a2933338"
                   target="_blank"
                   rel="noreferrer"
@@ -46,7 +46,7 @@ const ContactPage = () => {
 
               <Motion delay={0.5}>
                 <a
-                  className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px] transition-all duration-300 md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
+                  className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px] md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
                   href="http://t.me/dmytro_yeromin"
                   target="_blank"
                   rel="noreferrer"
@@ -61,7 +61,7 @@ const ContactPage = () => {
 
               <Motion delay={0.6}>
                 <a
-                  className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px] transition-all duration-300 md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
+                  className="w-[60px] h-[60px] bg-[rgba(0,255,255,0.06)] border border-[rgba(0,255,255,0.3)] rounded-[15px] flex justify-center items-center transition duration-300 ease-in-out backdrop-blur-[10px] md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
                   href="https://github.com/Yeromin1"
                   target="_blank"
                   rel="noreferrer"

@@ -5,13 +5,13 @@ import { Motion } from "../../animations/reveal/Motion";
 import { fadeUp } from "../../animations/reveal/variants";
 
 import projects from "../../data/projects";
-import { useAutoCarousel } from "../../hooks/useAutoCarousel";
+import { useCarouselScroll } from "../../hooks/useCarouselScroll";
 
 const ProjectsPage = () => {
   const { t } = useTranslation("projects");
   const carouselRef = useRef(null);
 
-  useAutoCarousel(carouselRef);
+  const { scrollNext, scrollPrev } = useCarouselScroll(carouselRef);
 
   return (
     <section id="projects" className="bg-section">
@@ -22,20 +22,16 @@ const ProjectsPage = () => {
           </h2>
         </Motion>
 
-        <div ref={carouselRef} className="flex  overflow-x-auto w-full">
-          {projects.map((project, index) => {
-            const prevSlide = index === 0 ? projects.length : index;
-
-            const nextSlide = index === projects.length - 1 ? 1 : index + 2;
-
-            return (
+        <div className="relative">
+          {/* CAROUSEL */}
+          <div ref={carouselRef} className="flex overflow-x-auto w-full">
+            {projects.map((project) => (
               <div
                 key={project.id}
-                id={`slide${index + 1}`}
                 className="carousel-item relative p-4 w-[343px] flex-shrink-0"
               >
                 <Motion variant={fadeUp} delay={0.3}>
-                  <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full ">
+                  <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full duration-300 md:hover:scale-101 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]">
                     <figure className="w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
                       <img
                         src={project.img}
@@ -45,16 +41,17 @@ const ProjectsPage = () => {
                     </figure>
 
                     <div className="flex flex-col flex-1 text-center justify-between">
-                      <div className="mb-4 ">
-                        <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda] ">
+                      <div className="mb-4">
+                        <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda]">
                           {t(`projects.${project.key}.title`)}
                         </h4>
+
                         <p className="text-sm leading-relaxed text-gray-300">
                           {t(`projects.${project.key}.description`)}
                         </p>
                       </div>
 
-                      <div className="flex justify-between w-full ">
+                      <div className="flex justify-between w-full">
                         <a
                           href={project.link}
                           target="_blank"
@@ -76,19 +73,25 @@ const ProjectsPage = () => {
                     </div>
                   </div>
                 </Motion>
-
-                <div className="hidden md:flex absolute left-5 right-5 top-1/2 -translate-y-1/2 justify-between">
-                  <a href={`#slide${prevSlide}`} className="btn-circle">
-                    ❮
-                  </a>
-
-                  <a href={`#slide${nextSlide}`} className="btn-circle">
-                    ❯
-                  </a>
-                </div>
               </div>
-            );
-          })}
+            ))}
+          </div>
+
+          <div className="hidden md:flex absolute left-5 right-5 top-1/2 -translate-y-1/2 justify-between">
+            <button
+              onClick={scrollPrev}
+              className="btn-circle w-[30px] h-[30px] border border-[rgba(0,255,255,0.3)] duration-300 md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
+            >
+              ❮
+            </button>
+
+            <button
+              onClick={scrollNext}
+              className="btn-circle w-[30px] h-[30px] border border-[rgba(0,255,255,0.3)] duration-300 md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
+            >
+              ❯
+            </button>
+          </div>
         </div>
       </div>
     </section>
