@@ -9,6 +9,26 @@
     "yacht": {
       "title": "Yacht",
       "description": "A responsive website for browsing and renting yachts. Developed using HTML, CSS, and JavaScript. It features a yacht catalog with images, descriptions, and prices. The website has a responsive layout, is optimized for different devices, and provides a convenient and modern user interface."
+    },
+    "phoneBook": {
+      "title": "Phone Book",
+      "description": "Built a phonebook application with contact management and user authentication using React. Implemented user registration and login, storing contacts on a backend server. Added features for searching contacts and deleting entries, with form validation for inputs."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Developed a single-page portfolio prototype to showcase personal skills, projects, and achievements. Features responsive layout, hover effects, interactive sections, and smooth navigation. Designed to create a professional online presence and serve as a digital business card. Built with HTML, CSS, and basic JavaScript."
+    },
+    "imageSearch": {
+      "title": "Image Search",
+      "description": "Developed an image search application in JavaScript using a public API. Implemented asynchronous requests with fetch and processed the data to display images as cards with information (likes, views, comments, downloads). Added dynamic search by keyword with interactive UI elements. Utilized CSS for responsive design."
+    },
+    "toDoList": {
+      "title": "To do list",
+      "description": "Developed a to-do list manager in JavaScript for managing daily tasks. Implemented adding and removing tasks with dynamic list updates."
+    },
+    "webStudio": {
+      "title": "Web Studio",
+      "description": "Developed a fully responsive website for the design studio WebStudio using HTML and CSS. Implemented hover effects, animations, and modal windows. The design follows the mobile-first approach and adheres to modern web standards. Ensured cross-browser compatibility and fast loading performance."
     }
   },
 

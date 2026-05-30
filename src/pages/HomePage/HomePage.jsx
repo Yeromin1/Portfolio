@@ -48,7 +48,7 @@ const HomePage = () => {
                   href="https://drive.google.com/file/d/1h4-qouIQ6R3Qy-SPucQKDTiGifpGJXNj/view?usp=drive_link"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn px-[25px] py-[10px] animate-[glowPulse_2.5s_ease-in-out_infinite] md:text-base lg:text-lg"
+                  className="btn px-[25px] py-[10px] md:text-base lg:text-lg"
                 >
                   {t("viewResume")}
                 </a>
