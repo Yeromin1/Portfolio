@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-[100] backdrop-blur-[6px]">
       <div className="container flex items-center justify-between py-3">
-        <h2 className=" text-2xl font-semibold text-glow md:w-[148px] lg:text-[32px] lg:tracking-[2px]">
+        <h2 className=" text-2xl font-semibold text-glow md:w-[148px] lg:text-[32px] lg:tracking-[2px] lg:w-[211px]">
           {t("heroTitle")}
         </h2>
 

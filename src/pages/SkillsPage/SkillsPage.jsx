@@ -16,14 +16,14 @@ const SkillsPage = () => {
 
   return (
     <section id="skills" className="bg-section overflow-hidden">
-      <div className="container py-20 md:py-24">
+      <div className="container pt-20 pb-16 md:pt-24 lg:pt-[118px]">
         <Motion delay={0.1}>
           <h2 className="text-4xl font-semibold title-shadow text-center mb-8 md:text-[38px]">
             {t("title")}
           </h2>
         </Motion>
 
-        <div className="flex flex-col md:flex-row gap-10 justify-center md:gap-12">
+        <div className="flex flex-col md:flex-row gap-10 justify-center md:gap-12 lg:gap-14">
           <div>
             <Motion delay={0.3}>
               <h4 className="text-center text-lg font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86] md:text-xl">

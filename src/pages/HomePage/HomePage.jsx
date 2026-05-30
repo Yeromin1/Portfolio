@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <section
       id="home"
-      className="h-screen bg-[#020e26] py-20 relative overflow-hidden md:pt-24 lg:pt-28"
+      className="h-screen bg-[#020e26] pt-20 pb-16 relative overflow-hidden md:pt-24 md:pb-10 lg:pt-28"
     >
       <div className="container grid gap-[60px] justify-items-center md:gap-8">
         {/* BACKGROUND ANIMATION */}

@@ -16,7 +16,7 @@ const CertificatesPage = () => {
 
   return (
     <section id="certificates" className="bg-section overflow-hidden">
-      <div className="container py-20 md:py-24">
+      <div className="container pt-20 pb-16 md:pt-24 lg:pt-[118px]">
         <Motion delay={0}>
           <h2 className="text-4xl font-semibold title-shadow text-center mb-8 md:text-[38px]">
             {t("title")}
@@ -25,7 +25,7 @@ const CertificatesPage = () => {
 
         <div className="grid gap-7 md:gap-9">
           <Motion variant={fadeUp} delay={0.3}>
-            <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full md:w-[70%] md:mx-auto">
+            <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full md:w-[70%] lg:w-[50%]  md:mx-auto">
               <figure className="w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
                 <img
                   src={certificateImg}
@@ -49,7 +49,7 @@ const CertificatesPage = () => {
           </Motion>
 
           <Motion variant={fadeUp} delay={0.4}>
-            <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full md:w-[70%] md:mx-auto">
+            <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full md:w-[70%] lg:w-[50%] md:mx-auto">
               <figure className="w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
                 <img
                   src={certificates}

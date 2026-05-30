@@ -15,7 +15,7 @@ const ProjectsPage = () => {
 
   return (
     <section id="projects" className="bg-section">
-      <div className="container py-20 md:py-24">
+      <div className="container pt-20 pb-16 md:pt-24 lg:pt-[118px]">
         <Motion delay={0.1}>
           <h2 className="text-4xl font-semibold title-shadow text-center mb-8 md:text-[38px]">
             {t("title")}

@@ -42,10 +42,10 @@ const Footer = () => {
               </h4>
             </Motion>
 
-            <div className="flex gap-4 justify-center">
+            <div className="flex gap-4 justify-center lg:gap-6">
               <Motion delay={0.5}>
                 <a
-                  className=""
+                  className="inline-block transition-all duration-300 md:hover:scale-120"
                   href="http://www.linkedin.com/in/dmytro-yeromin-2a2933338"
                   target="_blank"
                   rel="noreferrer"
@@ -63,7 +63,11 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={Telegram} alt="Telegram logo" className="" />
+                  <img
+                    src={Telegram}
+                    alt="Telegram logo"
+                    className="inline-block transition-all duration-300 md:hover:scale-120"
+                  />
                 </a>
               </Motion>
 
@@ -74,7 +78,11 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={Instagram} alt="Instagram logo" className="" />
+                  <img
+                    src={Instagram}
+                    alt="Instagram logo"
+                    className="inline-block transition-all duration-300 md:hover:scale-120"
+                  />
                 </a>
               </Motion>
 
@@ -85,7 +93,11 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={GitHub} alt="GitHub logo" className="" />
+                  <img
+                    src={GitHub}
+                    alt="GitHub logo"
+                    className="inline-block transition-all duration-300 md:hover:scale-120"
+                  />
                 </a>
               </Motion>
             </div>
@@ -98,7 +110,10 @@ const Footer = () => {
               </h4>
             </Motion>
             <Motion delay={0.4}>
-              <Navigation className="grid gap-2 md:gap-3" />
+              <Navigation
+                className="grid gap-2 md:gap-3"
+                buttonClassName="nav"
+              />
             </Motion>
           </div>
         </div>
