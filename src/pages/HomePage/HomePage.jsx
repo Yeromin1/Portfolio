@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <section
       id="home"
-      className="h-screen bg-[#020e26] pt-20 pb-16 relative overflow-hidden md:pt-24 md:pb-10 lg:pt-28"
+      className="h-screen bg-[var(--bg-home)] pt-20 pb-16 relative overflow-hidden md:pt-24 md:pb-10 lg:pt-28"
     >
       <div className="container grid gap-[60px] justify-items-center md:gap-8">
         {/* BACKGROUND ANIMATION */}
@@ -29,15 +29,15 @@ const HomePage = () => {
 
         {/* CONTENT */}
         <Motion delay={0}>
-          <div className="bg-white/5 border-2 border-cyan-400/20 rounded-[20px] p-10 px-7 shadow-[0_0_25px_rgba(0,255,255,0.08)] md:px-14 md:py-10 ">
+          <div className="bg-[var(--bg-card)] border-2 border-[var(--border-btn-header)] rounded-[20px] p-10 px-7 shadow-[0_0_25px_rgba(0,255,255,0.08)] md:px-14 md:py-10 ">
             <Motion delay={0.1}>
-              <h1 className="title-shadow font-medium text-center text-2xl mb-[15px] whitespace-nowrap md:text-[33px] md:leading-[1.41] md:text-4xl lg:text-5xl">
+              <h1 className="title font-medium text-center text-2xl mb-[15px] whitespace-nowrap md:text-[33px] md:leading-[1.41] md:text-4xl lg:text-5xl">
                 {t("title")}
               </h1>
             </Motion>
 
             <Motion delay={0.3}>
-              <p className="font-medium text-center text-lg text-[#00ffff] mb-10 md:font-semibold md:text-2xl  lg:text-3xl">
+              <p className="font-medium text-center text-lg text-[var(--text-position)] mb-10 md:font-semibold md:text-2xl  lg:text-3xl">
                 {t("position")}
               </p>
             </Motion>

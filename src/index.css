@@ -66,6 +66,60 @@ button {
   cursor: pointer;
 }
 
+:root {
+  --bg: #010b1e;
+  --bg-home: #020e26;
+  --bg-footer: rgb(3, 10, 20);
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-btn: #03101a;
+  --bg-btn-hover: #64ffda;
+  --text: #ffffff;
+  --text-position: #00ffff;
+  --text-btn: #ffffff;
+  --text-btn-hover: #03101a;
+  --border-btn-header: rgba(0, 255, 255, 0.2);
+  --border-btn: #64ffda;
+  --box-shadow-btn-header-hover: 0 0 25px #64ffda;
+  --box-shadow-btn-hover: 0 0 20px #64ffda, 0 0 35px #00bfff;
+  --text-shadow-nav-hover: 0 0 25px #64ffda;
+  --text-hover-nav: #64ffda;
+  --text-shadow-header:
+    rgb(35, 75, 134) 5px 0px 20px, rgb(101, 113, 131) 0px 0px 20px;
+  --text-shadow-title: 0 10px 8px #234b86, 10px 0 20px #657183;
+}
+
+[data-theme="retro"] {
+  --bg: rgb(236, 227, 202);
+  --bg-home: rgb(236, 227, 202);
+  --bg-footer: rgb(236, 227, 202);
+  --bg-card: #f5ede3;
+  --bg-btn: #c3b8ab;
+  --bg-btn-hover: whitesmoke;
+  --text: oklch(41% 0.112 45.904);
+  --text-title: oklch(39% 0.141 25.723);
+  --text-position: #cc5d3d;
+  --text-btn: #4a4a4a;
+  --text-btn-hover: black;
+  --border-btn-header: oklch(41% 0.112 45.904);
+  --border-btn: #cc5d3d;
+  --box-shadow-btn-header-hover:
+    0 0 10px oklch(41% 0.112 45.904 / 0.4),
+    0 0 25px oklch(41% 0.112 45.904 / 0.25),
+    0 0 40px oklch(41% 0.112 45.904 / 0.15);
+  --box-shadow-btn-hover: 0px 0px 7px #cc5d3d;
+  --text-shadow-nav-hover:
+    0 0 10px rgb(204 93 61 / 0.6), 0 0 25px rgb(204 93 61 / 0.35);
+  --text-hover-nav: #cc5d3d;
+  --text-shadow-header: none;
+  --text-shadow-title: none;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
 /*-------css---------*/
 
 .container {
@@ -74,22 +128,22 @@ button {
          lg:max-w-[1158px] lg:px-6;
 }
 
-.bg-section {
+/* .bg-section {
   background-color: #010b1e;
-}
+} */
 
-.title-shadow {
+/* .title-shadow {
   text-shadow:
     0 10px 8px #234b86,
     10px 0 20px #657183;
-}
+} */
 
 /*-------Header---------*/
-.text-glow {
+/* .text-glow {
   text-shadow:
     rgb(35, 75, 134) 5px 0px 20px,
     rgb(101, 113, 131) 0px 0px 20px;
-}
+} */
 
 /*-------Home Page---------*/
 @keyframes glowPulse {
@@ -110,6 +164,21 @@ button {
   }
 }
 
+.title {
+  color: var(--text-title);
+  text-shadow: var(--text-shadow-title);
+}
+
+.btn {
+  width: fit-content;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+
+  border: 2px solid var(--border-btn);
+  background: var(--bg-btn);
+  color: var(--text-btn);
+}
+
 /*-------About Page---------*/
 summary::marker {
   color: #64ffda !important;
@@ -119,26 +188,9 @@ summary {
   cursor: pointer;
 }
 
-.btn {
-  width: fit-content;
-  background: #03101a;
-  border: 2px solid #64ffda;
-  color: #ffffff;
-  border-radius: 9999px;
-  transition: all 0.3s ease;
-}
-
 /*------------@media-768px-------------*/
 @media (min-width: 768px) {
-  .btn:hover,
-  .btn:active {
-    background: #64ffda;
-    color: #03101a;
-    box-shadow:
-      0 0 20px #64ffda,
-      0 0 35px #00bfff;
-  }
-
+  /*------------Header-------------*/
   .nav,
   .language {
     transition: all 300ms ease;
@@ -146,10 +198,16 @@ summary {
 
   .nav:hover,
   .nav:active {
-    color: #64ffda;
-    text-shadow:
-      0 0 20px #64ffda,
-      0 0 35px #00bfff;
     transform: translateY(-2px);
   }
+
+  /*------------Home-------------*/
+  .btn:hover,
+  .btn:active {
+    background: var(--bg-btn-hover);
+    color: var(--text-btn-hover);
+    box-shadow: var(--box-shadow-btn-hover);
+  }
 }
+
+/* box-shadow: 0 0 0 4px oklch(39% 0.141 25.723), 0 0 50px oklch(39% 0.141 25.723 / 0.45), 0 0 100px oklch(39% 0.141 25.723 / 0.2); */

@@ -10,7 +10,7 @@ const ContactPage = () => {
   const { t } = useTranslation("contact");
 
   return (
-    <section id="contact" className="bg-section">
+    <section id="contact" className="bg">
       <div className="container py-20 md:py-28">
         <Motion delay={0.1}>
           <div className="bg-[rgba(255,255,255,0.03)] border border-[rgba(0,255,255,0.2)] rounded-[20px] shadow-[0_0_30px_rgba(0,255,255,0.08)] py-[60px] px-10 md:w-[90%] md:mx-auto">

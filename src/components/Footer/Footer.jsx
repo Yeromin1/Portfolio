@@ -14,7 +14,7 @@ const Footer = () => {
   const { t } = useTranslation("footer");
 
   return (
-    <footer className=" bg-[rgb(3,10,20)] text-center shadow-[0_-5px_25px_rgba(100,255,218,0.2)] border-t-2 border-white">
+    <footer className=" bg-[var(--bg-footer)]  text-center shadow-[0_-5px_25px_rgba(100,255,218,0.2)] border-t-2 border-white">
       <div className="container py-16 pb-6">
         <div className="grid gap-8 md:flex md:justify-around ">
           <div className="">
@@ -26,7 +26,7 @@ const Footer = () => {
               </div>
             </Motion>
             <Motion delay={0.1}>
-              <h3 className="text-xl title-shadow mb-3">{t("title")}</h3>
+              <h3 className="text-xl title mb-3">{t("title")}</h3>
             </Motion>
             <Motion delay={0.3}>
               <p className="text-[0.95rem] text-[rgb(207,216,220)]">
@@ -37,7 +37,7 @@ const Footer = () => {
 
           <div className="">
             <Motion delay={0.4}>
-              <h4 className="text-lg title-shadow mb-3 md:text-xl lg:mb-5 xl:mb-6 ">
+              <h4 className="text-lg title mb-3 md:text-xl lg:mb-5 xl:mb-6 ">
                 {t("connectWithMe")}
               </h4>
             </Motion>
@@ -105,7 +105,7 @@ const Footer = () => {
 
           <div className="mb-10 md:mb-6">
             <Motion delay={0.2}>
-              <h4 className="text-lg title-shadow mb-3 md:text-xl">
+              <h4 className="text-lg title mb-3 md:text-xl">
                 {t("quickLinks")}
               </h4>
             </Motion>

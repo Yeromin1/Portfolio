@@ -15,10 +15,10 @@ const SkillsPage = () => {
   const translatedTechSkills = useTranslateSkills(techSkills, "tech");
 
   return (
-    <section id="skills" className="bg-section overflow-hidden">
+    <section id="skills" className="bg overflow-hidden">
       <div className="container pt-20 pb-16 md:pt-24 lg:pt-[118px]">
         <Motion delay={0.1}>
-          <h2 className="text-4xl font-semibold title-shadow text-center mb-8 md:text-[38px]">
+          <h2 className="text-4xl font-semibold title text-center mb-8 md:text-[38px]">
             {t("title")}
           </h2>
         </Motion>

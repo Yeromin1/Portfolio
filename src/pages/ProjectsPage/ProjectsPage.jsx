@@ -14,10 +14,10 @@ const ProjectsPage = () => {
   const { scrollNext, scrollPrev } = useCarouselScroll(carouselRef);
 
   return (
-    <section id="projects" className="bg-section">
+    <section id="projects" className="bg">
       <div className="container pt-20 pb-16 md:pt-24 lg:pt-[118px]">
         <Motion delay={0.1}>
-          <h2 className="text-4xl font-semibold title-shadow text-center mb-8 md:text-[38px]">
+          <h2 className="text-4xl font-semibold title text-center mb-8 md:text-[38px]">
             {t("title")}
           </h2>
         </Motion>

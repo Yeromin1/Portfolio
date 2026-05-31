@@ -4,26 +4,24 @@ const ThemeController = () => {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "mytheme";
 
     document.documentElement.setAttribute("data-theme", savedTheme);
 
-    setChecked(savedTheme === "synthwave");
+    setChecked(savedTheme === "retro");
   }, []);
 
-  const handleChange = (e) => {
-    const theme = e.target.checked ? "synthwave" : "light";
+  const handleChange = () => {
+    const newTheme = checked ? "mytheme" : "retro";
 
-    document.documentElement.setAttribute("data-theme", theme);
-
-    localStorage.setItem("theme", theme);
-
-    setChecked(e.target.checked);
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    setChecked(!checked);
   };
 
   return (
     <div>
-      <label className="w-6 h-[22px] bg-white/10  toggle text-base-content md:hover:translate-y-[-2px] md:hover:shadow-[0_0_25px_#64ffda] language ">
+      <label className="w-7 h-7 bg-white/10  border-2 border-[var(--border-btn-header)] rounded-md  toggle text-base-content md:hover:translate-y-[-2px] md:hover:shadow-[var(--box-shadow-btn-header-hover)] language ">
         {/* <label className="w-[50px] h-7 bg-white/10 toggle text-base-content "></label> */}
         <input
           type="checkbox"

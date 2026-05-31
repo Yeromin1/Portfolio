@@ -11,7 +11,7 @@ const AboutPage = () => {
   const { t } = useTranslation("about");
 
   return (
-    <section id="about" className="bg-section">
+    <section id="about" className="bg">
       <div className="container pt-24 pb-16 md:pt-28 lg:pt-[138px]">
         <div className="flex flex-col items-center justify-center gap-8 mb-9 md:mb-11 lg:mb-14 ">
           <Motion variant={zoomIn} delay={0.1}>
@@ -26,7 +26,7 @@ const AboutPage = () => {
 
           <Motion delay={0.3}>
             <div className="grid gap-1  md:gap-2 md:w-[90%] md:mx-auto">
-              <h2 className="text-4xl font-semibold title-shadow mb-3 mx-auto md:text-[38px]">
+              <h2 className="text-4xl font-semibold title mb-3 mx-auto md:text-[38px]">
                 {t("title")}
               </h2>
               <p className="text-lg leading-relaxed md:text-xl md:text-left">
