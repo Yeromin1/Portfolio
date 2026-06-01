@@ -6,9 +6,13 @@ import myPhotoRetro from "../../assets/images/MyFotoRetro.jpg";
 import { Motion } from "../../animations/reveal/Motion";
 import { zoomIn } from "../../animations/reveal/variants";
 import { FloatingCircle } from "../../animations/motion/floating";
+import { useTheme } from "../../hooks/useTheme";
 
 const HomePage = () => {
   const { t } = useTranslation("home");
+
+  const { theme } = useTheme();
+
   return (
     <section
       id="home"

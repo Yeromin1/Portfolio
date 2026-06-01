@@ -1,31 +1,15 @@
-import { useEffect, useState } from "react";
+import { useTheme } from "../../../hooks/useTheme";
 
 const ThemeController = () => {
-  const [checked, setChecked] = useState(false);
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "mytheme";
-
-    document.documentElement.setAttribute("data-theme", savedTheme);
-
-    setChecked(savedTheme === "retro");
-  }, []);
-
-  const handleChange = () => {
-    const newTheme = checked ? "mytheme" : "retro";
-
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-    setChecked(!checked);
-  };
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div>
       <label className="w-7 h-7 bg-white/10  border border-[var(--border-btn-header)] rounded-md  toggle text-base-content md:hover:translate-y-[-2px] md:hover:shadow-[var(--box-shadow-btn-header-hover)] language ">
         <input
           type="checkbox"
-          checked={checked}
-          onChange={handleChange}
+          checked={theme === "retro"}
+          onChange={toggleTheme}
           className="theme-controller w-[22px]"
         />
 
