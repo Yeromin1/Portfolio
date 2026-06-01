@@ -74,6 +74,8 @@ button {
   --bg-btn: #03101a;
   --bg-btn-hover: #64ffda;
   --bg-btn-mobile: #ffffff;
+  --bg-animation-home-top: rgba(34, 211, 238, 0.1);
+  --bg-animation-home-bottom: rgba(59, 130, 246, 0.1);
 
   --text: #ffffff;
   --text-position: #00ffff;
@@ -104,6 +106,8 @@ button {
   --bg-btn: #c3b8ab;
   --bg-btn-hover: whitesmoke;
   --bg-btn-mobile: oklch(41% 0.112 45.904);
+  --bg-animation-home-top: rgba(245, 237, 227, 0.5);
+  --bg-animation-home-bottom: rgba(245, 237, 227, 0.7);
 
   --text: oklch(41% 0.112 45.904);
   --text-title: oklch(39% 0.141 25.723);

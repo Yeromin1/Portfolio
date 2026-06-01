@@ -21,13 +21,13 @@ const HomePage = () => {
       <div className="container grid gap-[60px] justify-items-center md:gap-8">
         {/* BACKGROUND ANIMATION */}
         <FloatingCircle
-          className="absolute top-[-80px] left-[-80px] w-[180px] h-[180px] bg-cyan-400/10 rounded-full blur-xl"
+          className="absolute top-[-80px] left-[-80px] w-[180px] h-[180px] bg-[var(--bg-animation-home-top)] rounded-full blur-xl"
           x={200}
           y={200}
         />
 
         <FloatingCircle
-          className="absolute bottom-[-80px] right-[-80px] w-[180px] h-[180px] bg-blue-500/10 rounded-full blur-xl"
+          className="absolute bottom-[-80px] right-[-80px] w-[180px] h-[180px] bg-[var(--bg-animation-home-bottom)] rounded-full blur-xl"
           x={-200}
           y={-200}
         />
