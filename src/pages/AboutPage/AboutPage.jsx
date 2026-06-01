@@ -5,19 +5,22 @@ import { Motion } from "../../animations/reveal/Motion";
 import { zoomIn } from "../../animations/reveal/variants";
 
 import myPhoto from "../../assets/images/MyFoto.jpg";
+import myPhotoRetro from "../../assets/images/MyFotoRetro.jpg";
+import { useTheme } from "../../hooks/useTheme";
 
 const AboutPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation("about");
+  const { theme } = useTheme();
 
   return (
     <section id="about" className="bg">
       <div className="container pt-24 pb-16 md:pt-28 lg:pt-[138px]">
         <div className="flex flex-col items-center justify-center gap-8 mb-9 md:mb-11 lg:mb-14 ">
           <Motion variant={zoomIn} delay={0.1}>
-            <div className=" rounded-[20px] border-4 border-[#64ffda] shadow-[0_0_30px_#64ffda,0_0_60px_#00bfff_inset] transition-transform transition-shadow duration-500 ease-in-out w-full max-w-[250px] aspect-square overflow-hidden">
+            <div className=" rounded-[20px] border-4 border-[var(--border-btn)] shadow-[var(--box-shadow-about-img)] transition-transform transition-shadow duration-500 ease-in-out w-full max-w-[250px] aspect-square overflow-hidden">
               <img
-                src={myPhoto}
+                src={theme === "retro" ? myPhotoRetro : myPhoto}
                 alt="My photo"
                 className="w-full h-full object-cover"
               />
@@ -60,10 +63,10 @@ const AboutPage = () => {
         <Motion delay={0.4}>
           <div className="flex flex-col gap-5 md:w-[90%] md:mx-auto md:gap-6 lg:gap-7">
             <details
-              className="collapse  shadow-[0_2px_10px_#64ffda]"
+              className="collapse  shadow-[var(--box-shadow-accordion)]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold md:font-bold">
+              <summary className="p-4 marker-color font-semibold md:font-bold">
                 {t("faq.uiApproach.question")}
               </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide md:text-base">
@@ -72,10 +75,10 @@ const AboutPage = () => {
             </details>
 
             <details
-              className="collapse shadow-[0_2px_10px_#64ffda]"
+              className="collapse shadow-[var(--box-shadow-accordion)]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold md:font-bold">
+              <summary className="p-4 marker-color font-semibold md:font-bold">
                 {t("faq.technologies.question")}
               </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide md:text-base">
@@ -84,10 +87,10 @@ const AboutPage = () => {
             </details>
 
             <details
-              className="collapse shadow-[0_2px_10px_#64ffda]"
+              className="collapse shadow-[var(--box-shadow-accordion)]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold md:font-bold">
+              <summary className="p-4 marker-color font-semibold md:font-bold">
                 {t("faq.problemSolving.question")}
               </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide md:text-base">
@@ -96,10 +99,10 @@ const AboutPage = () => {
             </details>
 
             <details
-              className="collapse shadow-[0_2px_10px_#64ffda]"
+              className="collapse shadow-[var(--box-shadow-accordion)]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold md:font-bold">
+              <summary className="p-4 marker-color font-semibold md:font-bold">
                 {t("faq.fitRole.question")}
               </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide md:text-base">
@@ -108,10 +111,10 @@ const AboutPage = () => {
             </details>
 
             <details
-              className="collapse shadow-[0_2px_10px_#64ffda]"
+              className="collapse shadow-[var(--box-shadow-accordion)]"
               name="my-accordion-det-1"
             >
-              <summary className="p-4 font-semibold md:font-bold">
+              <summary className="p-4 marker-color font-semibold md:font-bold">
                 {t("faq.teamWork.question")}
               </summary>
               <div className="collapse-content text-sm leading-relaxed tracking-wide md:text-base">

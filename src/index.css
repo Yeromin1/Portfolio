@@ -90,12 +90,16 @@ button {
   --box-shadow-mobile-nav: 10px 0 15px #fff, 15px 0 30px #00ffff;
   --box-shadow-home-img:
     0 0 0 4px #094165, 0 0 25px #fff, 0 0 40px rgba(0, 191, 255, 0.4);
+  --box-shadow-about-img: 0 0 30px #64ffda, 0 0 60px #00bfff inset;
+  --box-shadow-accordion: 0 2px 10px #64ffda;
 
   --text-shadow-nav-hover: 0 0 25px #64ffda;
   --text-hover-nav: #64ffda;
   --text-shadow-header:
     rgb(35, 75, 134) 5px 0px 20px, rgb(101, 113, 131) 0px 0px 20px;
   --text-shadow-title: 0 10px 8px #234b86, 10px 0 20px #657183;
+
+  --marker-color: #64ffda;
 }
 
 [data-theme="retro"] {
@@ -127,12 +131,16 @@ button {
   --box-shadow-home-img:
     0 0 0 4px oklch(39% 0.141 25.723), 0 0 50px oklch(39% 0.141 25.723 / 0.45),
     0 0 100px oklch(39% 0.141 25.723 / 0.2);
+  --box-shadow-about-img: 0 0 30px #cc5d3d, 0 0 60px #cc5d3d inset;
+  --box-shadow-accordion: 0 2px 10px #cc5d3d;
 
   --text-shadow-nav-hover:
     0 0 10px rgb(204 93 61 / 0.6), 0 0 25px rgb(204 93 61 / 0.35);
   --text-hover-nav: #cc5d3d;
   --text-shadow-header: none;
   --text-shadow-title: none;
+
+  --marker-color: #cc5d3d;
 }
 
 body {
@@ -201,8 +209,8 @@ body {
 }
 
 /*-------About Page---------*/
-summary::marker {
-  color: #64ffda !important;
+.marker-color::marker {
+  color: var(--marker-color) !important;
 }
 
 summary {
