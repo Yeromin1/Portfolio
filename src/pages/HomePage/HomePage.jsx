@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import myPhoto from "../../assets/images/MyFoto.jpg";
+import myPhotoRetro from "../../assets/images/MyFotoRetro.jpg";
 
 import { Motion } from "../../animations/reveal/Motion";
 import { zoomIn } from "../../animations/reveal/variants";
@@ -59,8 +60,11 @@ const HomePage = () => {
 
         <Motion variant={zoomIn} delay={0.9}>
           <div className="avatar mx-auto">
-            <div className="ring-4 ring-[#094165] w-44 rounded-full shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)] md:w-48">
-              <img src={myPhoto} alt="My photo" />
+            <div className="shadow-[var(--box-shadow-home-img)] w-44 rounded-full md:w-48">
+              <img
+                src={theme === "retro" ? myPhotoRetro : myPhoto}
+                alt="My photo"
+              />
             </div>
           </div>
         </Motion>
