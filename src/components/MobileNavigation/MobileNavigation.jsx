@@ -26,7 +26,7 @@ const MobileNavigation = () => {
           </div>
 
           <svg
-            className={`absolute w-8 h-8 transition-all duration-700 ${
+            className={`absolute w-9 h-9 transition-all duration-700 ${
               open
                 ? "opacity-100 scale-100 rotate-0"
                 : "opacity-0 scale-75 -rotate-90"
