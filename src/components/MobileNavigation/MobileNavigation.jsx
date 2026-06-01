@@ -19,10 +19,10 @@ const MobileNavigation = () => {
                 : "opacity-100 scale-100 rotate-0"
             }`}
           >
-            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
-            <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
+            <span className="w-1.5 h-1.5 bg-[var(--bg-btn-mobile)] rounded-full"></span>
+            <span className="w-1.5 h-1.5 bg-[var(--bg-btn-mobile)] rounded-full"></span>
+            <span className="w-1.5 h-1.5 bg-[var(--bg-btn-mobile)] rounded-full"></span>
+            <span className="w-1.5 h-1.5 bg-[var(--bg-btn-mobile)] rounded-full"></span>
           </div>
 
           <svg
@@ -33,7 +33,7 @@ const MobileNavigation = () => {
             }`}
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            stroke="var(--bg-btn-mobile)"
             strokeWidth="3"
           >
             <path d="M18 6L6 18M6 6l12 12" />
@@ -43,7 +43,7 @@ const MobileNavigation = () => {
 
       {open && (
         <div className="fixed inset-0 z-40" onClick={() => setOpen(false)}>
-          <div className="absolute top-24 w-64 p-4 rounded-r-xl shadow-[10px_0_15px_#fff,_15px_0_30px_#00ffff] bg-section">
+          <div className="absolute top-24 w-64 p-4 rounded-r-xl shadow-[var(--box-shadow-mobile-nav)] bg-[var(--bg)]">
             <Navigation
               className="flex flex-col gap-4 text-sm"
               buttonClassName="text-left !text-[18px] font-medium"

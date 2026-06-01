@@ -73,14 +73,20 @@ button {
   --bg-card: rgba(255, 255, 255, 0.05);
   --bg-btn: #03101a;
   --bg-btn-hover: #64ffda;
+  --bg-btn-mobile: #ffffff;
+
   --text: #ffffff;
   --text-position: #00ffff;
   --text-btn: #ffffff;
   --text-btn-hover: #03101a;
+
   --border-btn-header: rgba(0, 255, 255, 0.2);
   --border-btn: #64ffda;
+
   --box-shadow-btn-header-hover: 0 0 25px #64ffda;
   --box-shadow-btn-hover: 0 0 20px #64ffda, 0 0 35px #00bfff;
+  --box-shadow-mobile-nav: 10px 0 15px #fff, 15px 0 30px #00ffff;
+
   --text-shadow-nav-hover: 0 0 25px #64ffda;
   --text-hover-nav: #64ffda;
   --text-shadow-header:
@@ -95,18 +101,24 @@ button {
   --bg-card: #f5ede3;
   --bg-btn: #c3b8ab;
   --bg-btn-hover: whitesmoke;
+  --bg-btn-mobile: oklch(41% 0.112 45.904);
+
   --text: oklch(41% 0.112 45.904);
   --text-title: oklch(39% 0.141 25.723);
   --text-position: #cc5d3d;
   --text-btn: #4a4a4a;
   --text-btn-hover: black;
+
   --border-btn-header: oklch(41% 0.112 45.904);
   --border-btn: #cc5d3d;
+
   --box-shadow-btn-header-hover:
     0 0 10px oklch(41% 0.112 45.904 / 0.4),
     0 0 25px oklch(41% 0.112 45.904 / 0.25),
     0 0 40px oklch(41% 0.112 45.904 / 0.15);
   --box-shadow-btn-hover: 0px 0px 7px #cc5d3d;
+  --box-shadow-mobile-nav: 10px 0 15px #fff, 15px 0 30px #cc5d3d;
+
   --text-shadow-nav-hover:
     0 0 10px rgb(204 93 61 / 0.6), 0 0 25px rgb(204 93 61 / 0.35);
   --text-hover-nav: #cc5d3d;
