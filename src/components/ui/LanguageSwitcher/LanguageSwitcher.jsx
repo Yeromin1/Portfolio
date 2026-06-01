@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
 
   return (
     <button
-      className=" w-6 h-6 bg-white/10  border border-[var(--border-btn-header)] rounded-md md:hover:translate-y-[-2px] md:hover:shadow-[var(--box-shadow-btn-header-hover)] language"
+      className=" w-7 h-7 bg-white/10  border border-[var(--border-btn-header)] rounded-md md:hover:translate-y-[-2px] md:hover:shadow-[var(--box-shadow-btn-header-hover)] language"
       onClick={toggleLang}
     >
       <span className="tracking-wide text-sm">{lang.toUpperCase()}</span>

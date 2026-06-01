@@ -11,7 +11,7 @@ const MobileNavigation = () => {
         onClick={() => setOpen(!open)}
         className="w-10 h-10 flex items-center justify-center rounded-lg   transition"
       >
-        <div className="relative w-5 h-5 flex items-center justify-center">
+        <div className="relative w-6 h-6 flex items-center justify-center">
           <div
             className={`absolute inset-0 grid grid-cols-2 gap-1 transition-all duration-700 ${
               open
