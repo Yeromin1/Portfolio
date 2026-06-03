@@ -25,7 +25,7 @@ const CertificatesPage = () => {
 
         <div className="grid gap-7 md:gap-9">
           <Motion variant={fadeUp} delay={0.3}>
-            <div className="bg-[#112240] p-5  rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full md:w-[70%] lg:w-[50%]  md:mx-auto ">
+            <div className="bg-[var(--bg-card-project)] p-5  rounded-[15px] shadow-[var(--box-shadow-card)] flex flex-col h-full md:w-[70%] lg:w-[50%]  md:mx-auto ">
               <figure className="w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
                 <img
                   src={certificateImg}
@@ -38,10 +38,10 @@ const CertificatesPage = () => {
                 />
               </figure>
               <div className="flex flex-col flex-1 text-center justify-between">
-                <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda] md:text-3xl">
+                <h4 className="card-title mb-2 justify-center text-2xl text-[var(--text-position)] md:text-3xl">
                   {t("goit.title")}
                 </h4>
-                <p className="text-sm leading-relaxed text-gray-300 md:text-base">
+                <p className="text-sm leading-relaxed text-[var(--text-card)] md:text-base">
                   {t("goit.description")}
                 </p>
               </div>
@@ -49,7 +49,7 @@ const CertificatesPage = () => {
           </Motion>
 
           <Motion variant={fadeUp} delay={0.4}>
-            <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full md:w-[70%] lg:w-[50%] md:mx-auto">
+            <div className="bg-[var(--bg-card-project)] p-5 rounded-[15px] shadow-[var(--box-shadow-card)] flex flex-col h-full md:w-[70%] lg:w-[50%] md:mx-auto">
               <figure className="w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
                 <img
                   src={certificates}
@@ -62,10 +62,10 @@ const CertificatesPage = () => {
                 />
               </figure>
               <div className="flex flex-col flex-1 text-center justify-between">
-                <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda] md:text-3xl">
+                <h4 className="card-title mb-2 justify-center text-2xl text-[var(--text-position)] md:text-3xl">
                   {t("abinbev.title")}
                 </h4>
-                <p className="text-sm leading-relaxed text-gray-300 md:text-base">
+                <p className="text-sm leading-relaxed text-[var(--text-card)] md:text-base">
                   {t("abinbev.description")}
                 </p>
               </div>
