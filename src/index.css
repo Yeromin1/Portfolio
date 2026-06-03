@@ -67,80 +67,100 @@ button {
 }
 
 :root {
+  --text: #ffffff;
+
+  /*--------Header Page---------*/
   --bg: #010b1e;
-  --bg-home: #020e26;
-  --bg-footer: rgb(3, 10, 20);
-  --bg-card: rgba(255, 255, 255, 0.05);
   --bg-btn: #03101a;
   --bg-btn-hover: #64ffda;
   --bg-btn-mobile: #ffffff;
+  --text-shadow-header:
+    rgb(35, 75, 134) 5px 0px 20px, rgb(101, 113, 131) 0px 0px 20px;
+  --text-shadow-nav-hover: 0 0 25px #64ffda;
+  --text-hover-nav: #64ffda;
+  --border-btn-header: rgba(0, 255, 255, 0.2);
+  --box-shadow-btn-header-hover: 0 0 25px #64ffda;
+  --box-shadow-mobile-nav: 10px 0 15px #fff, 15px 0 30px #00ffff;
+
+  /*--------Home Page---------*/
+  --bg-home: #020e26;
+  --bg-card: rgba(255, 255, 255, 0.05);
   --bg-animation-home-top: rgba(34, 211, 238, 0.1);
   --bg-animation-home-bottom: rgba(59, 130, 246, 0.1);
-
-  --text: #ffffff;
   --text-position: #00ffff;
   --text-btn: #ffffff;
   --text-btn-hover: #03101a;
-
-  --border-btn-header: rgba(0, 255, 255, 0.2);
-  --border-btn: #64ffda;
-
-  --box-shadow-btn-header-hover: 0 0 25px #64ffda;
-  --box-shadow-btn-hover: 0 0 20px #64ffda, 0 0 35px #00bfff;
-  --box-shadow-mobile-nav: 10px 0 15px #fff, 15px 0 30px #00ffff;
+  --text-shadow-title: 0 10px 8px #234b86, 10px 0 20px #657183;
   --box-shadow-home-img:
     0 0 0 4px #094165, 0 0 25px #fff, 0 0 40px rgba(0, 191, 255, 0.4);
+  --box-shadow-btn-hover: 0 0 20px #64ffda, 0 0 35px #00bfff;
+  --border-btn: #64ffda;
+
+  /*--------About Page---------*/
+  --marker-color: #64ffda;
   --box-shadow-about-img: 0 0 30px #64ffda, 0 0 60px #00bfff inset;
   --box-shadow-accordion: 0 2px 10px #64ffda;
 
-  --text-shadow-nav-hover: 0 0 25px #64ffda;
-  --text-hover-nav: #64ffda;
-  --text-shadow-header:
-    rgb(35, 75, 134) 5px 0px 20px, rgb(101, 113, 131) 0px 0px 20px;
-  --text-shadow-title: 0 10px 8px #234b86, 10px 0 20px #657183;
+  /*--------Projects Page---------*/
+  --bg-card-project: #112240;
+  --text-card: rgb(209 213 219);
+  --box-shadow-card: 0 0 20px rgba(35, 75, 134, 0.4);
+  --box-shadow-card-hover: 0 0 10px #64ffda, 0 0 20px #00bfff;
+  --border-btn-projects: rgba(0, 255, 255, 0.3);
 
-  --marker-color: #64ffda;
+  /*--------Footer---------*/
+  --bg-footer: rgb(3, 10, 20);
 }
 
 [data-theme="retro"] {
+  --text: oklch(41% 0.112 45.904);
+
+  /*--------Header Page---------*/
   --bg: rgb(236, 227, 202);
-  --bg-home: rgb(236, 227, 202);
-  --bg-footer: rgb(236, 227, 202);
-  --bg-card: #f5ede3;
   --bg-btn: #c3b8ab;
   --bg-btn-hover: whitesmoke;
   --bg-btn-mobile: oklch(41% 0.112 45.904);
-  --bg-animation-home-top: rgba(245, 237, 227, 0.5);
-  --bg-animation-home-bottom: rgba(245, 237, 227, 0.7);
-
-  --text: oklch(41% 0.112 45.904);
-  --text-title: oklch(39% 0.141 25.723);
-  --text-position: #cc5d3d;
-  --text-btn: #4a4a4a;
-  --text-btn-hover: black;
-
+  --text-shadow-header: none;
+  --text-shadow-nav-hover:
+    0 0 10px rgb(204 93 61 / 0.6), 0 0 25px rgb(204 93 61 / 0.35);
+  --text-hover-nav: #cc5d3d;
   --border-btn-header: oklch(41% 0.112 45.904);
-  --border-btn: #cc5d3d;
-
   --box-shadow-btn-header-hover:
     0 0 10px oklch(41% 0.112 45.904 / 0.4),
     0 0 25px oklch(41% 0.112 45.904 / 0.25),
     0 0 40px oklch(41% 0.112 45.904 / 0.15);
-  --box-shadow-btn-hover: 0px 0px 7px #cc5d3d;
   --box-shadow-mobile-nav: 10px 0 15px #fff, 15px 0 30px #cc5d3d;
+
+  /*--------Home Page---------*/
+  --bg-home: rgb(236, 227, 202);
+  --bg-card: #f5ede3;
+  --bg-animation-home-top: rgba(245, 237, 227, 0.5);
+  --bg-animation-home-bottom: rgba(245, 237, 227, 0.7);
+  --text-position: #cc5d3d;
+  --text-btn: #4a4a4a;
+  --text-btn-hover: black;
+  --text-shadow-title: none;
+  --text-title: oklch(39% 0.141 25.723);
   --box-shadow-home-img:
     0 0 0 4px oklch(39% 0.141 25.723), 0 0 50px oklch(39% 0.141 25.723 / 0.45),
     0 0 100px oklch(39% 0.141 25.723 / 0.2);
+  --box-shadow-btn-hover: 0px 0px 7px #cc5d3d;
+  --border-btn: #cc5d3d;
+
+  /*--------About Page---------*/
+  --marker-color: #cc5d3d;
   --box-shadow-about-img: 0 0 30px #cc5d3d, 0 0 60px #cc5d3d inset;
   --box-shadow-accordion: 0 2px 10px #cc5d3d;
 
-  --text-shadow-nav-hover:
-    0 0 10px rgb(204 93 61 / 0.6), 0 0 25px rgb(204 93 61 / 0.35);
-  --text-hover-nav: #cc5d3d;
-  --text-shadow-header: none;
-  --text-shadow-title: none;
+  /*--------Projects Page---------*/
+  --bg-card-project: #f5ede3;
+  --text-card: rgb(149, 149, 149);
+  --box-shadow-card: 0 0 20px #d8cbb8;
+  --box-shadow-card-hover: 0 0 10px #cc5d3d, 0 0 20px #e78a70;
+  --border-btn-projects: #e78a70;
 
-  --marker-color: #cc5d3d;
+  /*--------Footer---------*/
+  --bg-footer: rgb(236, 227, 202);
 }
 
 body {
@@ -206,6 +226,7 @@ body {
   border: 2px solid var(--border-btn);
   background: var(--bg-btn);
   color: var(--text-btn);
+  /* box-shadow: none !important; */
 }
 
 /*-------About Page---------*/
@@ -230,13 +251,16 @@ summary {
     transform: translateY(-2px);
   }
 
-  /*------------Home-------------*/
+  /*------------Home Page-------------*/
   .btn:hover,
   .btn:active {
     background: var(--bg-btn-hover);
     color: var(--text-btn-hover);
     box-shadow: var(--box-shadow-btn-hover);
   }
-}
 
-/* box-shadow: 0 0 0 4px oklch(39% 0.141 25.723), 0 0 50px oklch(39% 0.141 25.723 / 0.45), 0 0 100px oklch(39% 0.141 25.723 / 0.2); */
+  /*--------Projects Page---------*/
+  .cart-shadow-hover:hover {
+    box-shadow: var(--box-shadow-card-hover);
+  }
+}

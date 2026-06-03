@@ -31,7 +31,7 @@ const ProjectsPage = () => {
                 className="carousel-item relative p-4 w-[343px] flex-shrink-0"
               >
                 <Motion variant={fadeUp} delay={0.3}>
-                  <div className="bg-[#112240] p-5 rounded-[15px] shadow-[0_0_20px_rgba(35,75,134,0.4)] flex flex-col h-full duration-300 md:hover:scale-101 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]">
+                  <div className="bg-[var(--bg-card-project)] p-5 rounded-[15px] shadow-[var(--box-shadow-card)] flex flex-col h-full duration-300 md:hover:scale-101 cart-shadow-hover">
                     <figure className="w-full aspect-[16/9] overflow-hidden rounded-xl mb-4">
                       <img
                         src={project.img}
@@ -42,11 +42,11 @@ const ProjectsPage = () => {
 
                     <div className="flex flex-col flex-1 text-center justify-between">
                       <div className="mb-4">
-                        <h4 className="card-title mb-2 justify-center text-2xl text-[#64ffda]">
+                        <h4 className="card-title mb-2 justify-center text-2xl text-[var(--text-position)]">
                           {t(`projects.${project.key}.title`)}
                         </h4>
 
-                        <p className="text-sm leading-relaxed text-gray-300">
+                        <p className="text-sm leading-relaxed text-[var(--text-card)]">
                           {t(`projects.${project.key}.description`)}
                         </p>
                       </div>
@@ -80,14 +80,14 @@ const ProjectsPage = () => {
           <div className="hidden md:flex absolute left-5 right-5 top-1/2 -translate-y-1/2 justify-between">
             <button
               onClick={scrollPrev}
-              className="btn-circle w-[30px] h-[30px] border border-[rgba(0,255,255,0.3)] duration-300 md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
+              className="btn-circle w-[30px] h-[30px] border border-[var(--border-btn-projects)] duration-300 md:hover:scale-115 cart-shadow-hover"
             >
               ❮
             </button>
 
             <button
               onClick={scrollNext}
-              className="btn-circle w-[30px] h-[30px] border border-[rgba(0,255,255,0.3)] duration-300 md:hover:scale-115 md:hover:shadow-[0_0_10px_#64ffda,_0_0_20px_#00bfff]"
+              className="btn-circle w-[30px] h-[30px] border border-[var(--border-btn-projects)] duration-300 md:hover:scale-115 cart-shadow-hover"
             >
               ❯
             </button>
