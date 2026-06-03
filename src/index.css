@@ -108,6 +108,12 @@ button {
   --box-shadow-card-hover: 0 0 10px #64ffda, 0 0 20px #00bfff;
   --border-btn-projects: rgba(0, 255, 255, 0.3);
 
+  /*--------Skills Page---------*/
+  --bg-card-skills: linear-gradient(135deg, #0a192f, #0d1b2a);
+  --text-shadow-skills: 0 0 10px #fff, 0 0 25px #234b86;
+  --timeline-color-skills: #64ffda;
+  --box-shadow-skills: 0 0 25px #fff, 0 0 40px rgba(0, 191, 255, 0.4);
+
   /*--------Footer---------*/
   --bg-footer: rgb(3, 10, 20);
 }
@@ -158,6 +164,12 @@ button {
   --box-shadow-card: 0 0 20px #d8cbb8;
   --box-shadow-card-hover: 0 0 10px #cc5d3d, 0 0 20px #e78a70;
   --border-btn-projects: #e78a70;
+
+  /*--------Skills Page---------*/
+  --bg-card-skills: #f5ede3;
+  --text-shadow-skills: none;
+  --timeline-color-skills: #e78a70;
+  --box-shadow-skills: 0 0 25px #fff, 0 0 40px #e78a70;
 
   /*--------Footer---------*/
   --bg-footer: rgb(236, 227, 202);
@@ -262,5 +274,10 @@ summary {
   /*--------Projects Page---------*/
   .cart-shadow-hover:hover {
     box-shadow: var(--box-shadow-card-hover);
+  }
+
+  /*--------Skills Page---------*/
+  .shadow-skills:hover {
+    box-shadow: var(--box-shadow-skills);
   }
 }

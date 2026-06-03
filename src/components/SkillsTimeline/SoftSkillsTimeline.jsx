@@ -3,9 +3,11 @@ const SoftSkillsTimeline = ({ skills }) => {
     <ul className="timeline timeline-vertical md:max-w-[215px]">
       {skills.map((skill, index) => (
         <li key={skill.id}>
-          {index !== 0 && <hr className="bg-[#64ffda] md:-translate-x-22" />}
+          {index !== 0 && (
+            <hr className="bg-[var(--timeline-color-skills)] md:-translate-x-22" />
+          )}
 
-          <div className="timeline-middle text-[#64ffda] md:-translate-x-22">
+          <div className="timeline-middle text-[var(--timeline-color-skills)] md:-translate-x-22">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -20,12 +22,12 @@ const SoftSkillsTimeline = ({ skills }) => {
             </svg>
           </div>
 
-          <div className="timeline-end timeline-box md:-translate-x-22 bg-[linear-gradient(135deg,#0a192f,#0d1b2a)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_25px_#fff,_0_0_40px_rgba(0,191,255,0.4)]">
+          <div className="timeline-end timeline-box md:-translate-x-22 bg-[var(--bg-card-skills)] transition-all duration-300 hover:-translate-y-2 shadow-skills">
             <p className="text-sm md:whitespace-nowrap">{skill.title}</p>
           </div>
 
           {index !== skills.length - 1 && (
-            <hr className="bg-[#64ffda] md:-translate-x-22" />
+            <hr className="bg-[var(--timeline-color-skills)] md:-translate-x-22" />
           )}
         </li>
       ))}

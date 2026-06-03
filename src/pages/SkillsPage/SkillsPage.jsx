@@ -26,7 +26,7 @@ const SkillsPage = () => {
         <div className="flex flex-col md:flex-row gap-10 justify-center md:gap-12 lg:gap-14">
           <div>
             <Motion delay={0.3}>
-              <h4 className="text-center text-lg font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86] md:text-xl">
+              <h4 className="text-center text-lg font-semibold mb-3 text-shadow-[var(--text-shadow-skills)] md:text-xl">
                 {t("tech.title")}
               </h4>
             </Motion>
@@ -38,7 +38,7 @@ const SkillsPage = () => {
 
           <div>
             <Motion delay={0.3}>
-              <h4 className="text-center text-lg font-semibold mb-3 [text-shadow:0_0_10px_#fff,_0_0_25px_#234b86] md:text-xl">
+              <h4 className="text-center text-lg font-semibold mb-3 text-shadow-[var(--text-shadow-skills)] md:text-xl">
                 {t("soft.title")}
               </h4>
             </Motion>
