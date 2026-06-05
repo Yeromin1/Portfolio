@@ -154,7 +154,7 @@ button {
   /*--------Home Page---------*/
   --bg-home: rgb(236, 227, 202);
   --bg-card: #f5ede3;
-  --bg-animation-home-top: rgba(245, 237, 227, 0.5);
+  --bg-animation-home-top: rgba(245, 237, 227, 0.1);
   --bg-animation-home-bottom: rgba(245, 237, 227, 0.7);
   --text-position: #cc5d3d;
   --text-btn: #4a4a4a;
