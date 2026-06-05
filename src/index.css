@@ -96,6 +96,10 @@ button {
   --box-shadow-btn-hover: 0 0 20px #64ffda, 0 0 35px #00bfff;
   --border-btn: #64ffda;
 
+  /*--------Home Page animation shadow btn---------*/
+  --box-shadow-btn-home-1: 0 0 10px #234b86, 0 0 20px #234b86;
+  --box-shadow-btn-home-2: 0 0 15px #234b86, 0 0 35px #234b86;
+
   /*--------About Page---------*/
   --marker-color: #64ffda;
   --box-shadow-about-img: 0 0 30px #64ffda, 0 0 60px #00bfff inset;
@@ -163,6 +167,10 @@ button {
   --box-shadow-btn-hover: 0px 0px 7px #cc5d3d;
   --border-btn: #cc5d3d;
 
+  /*--------Home Page animation shadow btn---------*/
+  --box-shadow-btn-home-1: 0 0 10px #d46c4f, 0 0 20px #d46c4f;
+  --box-shadow-btn-home-2: 0 0 15px #d46c4f, 0 0 35px #d46c4f;
+
   /*--------About Page---------*/
   --marker-color: #cc5d3d;
   --box-shadow-about-img: 0 0 30px #cc5d3d, 0 0 60px #cc5d3d inset;
@@ -211,39 +219,18 @@ body {
          lg:max-w-[1158px] lg:px-6;
 }
 
-/* .bg-section {
-  background-color: #010b1e;
-} */
-
-/* .title-shadow {
-  text-shadow:
-    0 10px 8px #234b86,
-    10px 0 20px #657183;
-} */
-
-/*-------Header---------*/
-/* .text-glow {
-  text-shadow:
-    rgb(35, 75, 134) 5px 0px 20px,
-    rgb(101, 113, 131) 0px 0px 20px;
-} */
-
 /*-------Home Page---------*/
 @keyframes glowPulse {
   0% {
-    box-shadow:
-      0 0 10px #234b86,
-      0 0 20px #234b86;
+    box-shadow: var(--box-shadow-btn-home-1);
   }
+
   50% {
-    box-shadow:
-      0 0 15px #234b86,
-      0 0 35px #234b86;
+    box-shadow: var(--box-shadow-btn-home-2);
   }
+
   100% {
-    box-shadow:
-      0 0 10px #234b86,
-      0 0 20px #234b86;
+    box-shadow: var(--box-shadow-btn-home-1);
   }
 }
 
