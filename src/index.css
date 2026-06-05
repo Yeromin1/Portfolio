@@ -124,6 +124,8 @@ button {
 
   /*--------Footer---------*/
   --bg-footer: rgb(3, 10, 20);
+  --box-shadow-footer-border: 0 -5px 25px rgba(100, 255, 218, 0.2);
+  --border-footer-bottom: rgb(35, 75, 134);
 }
 
 [data-theme="retro"] {
@@ -191,6 +193,8 @@ button {
 
   /*--------Footer---------*/
   --bg-footer: rgb(236, 227, 202);
+  --box-shadow-footer-border: 0 -5px 25px rgba(231, 138, 112, 0.15);
+  --border-footer-bottom: #e78a70;
 }
 
 body {

@@ -5,7 +5,7 @@ const ThemeController = () => {
 
   return (
     <div>
-      <label className="w-7 h-7 bg-white/10  border border-[var(--border-btn-header)] rounded-md  toggle text-base-content md:hover:translate-y-[-2px] md:hover:shadow-[var(--box-shadow-btn-header-hover)] language ">
+      <label className="w-7 h-7 bg-white/10  border border-[var(--border-btn-header)] rounded-md  toggle text-base-content md:hover:translate-y-[-2px] md:hover:shadow-[var(--box-shadow-btn-header-hover)] language">
         <input
           type="checkbox"
           checked={theme === "retro"}
