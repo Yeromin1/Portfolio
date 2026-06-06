@@ -50,7 +50,7 @@ const HomePage = () => {
             <Motion delay={0.6}>
               <div className="flex justify-center">
                 <a
-                  href="https://drive.google.com/file/d/1h4-qouIQ6R3Qy-SPucQKDTiGifpGJXNj/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/13cRCMXTJSa_PF51V-uzD-jSTHPeqK2j1/view?usp=drive_link"
                   target="_blank"
                   rel="noreferrer"
                   className="btn px-[25px] py-[10px] md:text-base lg:text-lg animate-[glowPulse_2s_ease-in-out_infinite]"
