@@ -46,7 +46,7 @@ const projects = [
     id: 6,
     key: "toDoList",
     img: toDoList,
-    link: "https://github.com/Yeromin1/LessonTeor7",
+    link: "https://github.com/Yeromin1/LessonTeor6",
     demo: "https://lesson-teor6.vercel.app/",
   },
   {
