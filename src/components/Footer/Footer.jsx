@@ -1,3 +1,6 @@
+import { useTranslation } from "react-i18next";
+import { useTheme } from "../../hooks/useTheme";
+
 import { Motion } from "../../animations/reveal/Motion";
 import { zoomIn } from "../../animations/reveal/variants";
 import Navigation from "../Navigation/Navigation";
@@ -9,8 +12,10 @@ import LinkedIn from "../../assets/images/footerLinkedin.png";
 import Telegram from "../../assets/images/footerTelegram.png";
 import Instagram from "../../assets/images/footerInstagram.png";
 import GitHub from "../../assets/images/footerGithub.png";
-import { useTranslation } from "react-i18next";
-import { useTheme } from "../../hooks/useTheme";
+import GitHubRetro from "../../assets/images/githubRetro.png";
+import TelegramRetro from "../../assets/images/telegramRetro.png";
+import LinkedInRetro from "../../assets/images/linkedinRetro.png";
+import InstagramRetro from "../../assets/images/instagramRetro.png";
 
 const Footer = () => {
   const { t } = useTranslation("footer");
@@ -57,7 +62,11 @@ const Footer = () => {
                   rel="noreferrer"
                 >
                   <div className="">
-                    <img src={LinkedIn} alt="LinkedIn logo" className="" />
+                    <img
+                      src={theme === "retro" ? LinkedInRetro : LinkedIn}
+                      alt="LinkedIn logo"
+                      className=""
+                    />
                   </div>
                 </a>
               </Motion>
@@ -70,7 +79,7 @@ const Footer = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src={Telegram}
+                    src={theme === "retro" ? TelegramRetro : Telegram}
                     alt="Telegram logo"
                     className="inline-block transition-all duration-300 md:hover:scale-120"
                   />
@@ -85,7 +94,7 @@ const Footer = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src={Instagram}
+                    src={theme === "retro" ? InstagramRetro : Instagram}
                     alt="Instagram logo"
                     className="inline-block transition-all duration-300 md:hover:scale-120"
                   />
@@ -100,7 +109,7 @@ const Footer = () => {
                   rel="noreferrer"
                 >
                   <img
-                    src={GitHub}
+                    src={theme === "retro" ? GitHubRetro : GitHub}
                     alt="GitHub logo"
                     className="inline-block transition-all duration-300 md:hover:scale-120"
                   />
