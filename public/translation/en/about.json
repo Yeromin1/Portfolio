@@ -1,8 +1,8 @@
 {
   "title": "About Me",
   "intro": "I create modern web interfaces that look stylish, work fast, and provide real value to users and businesses worldwide every day.",
-  "description": "I work with HTML, CSS, Tailwind, JavaScript, and React, focusing on details, user experience, and performance. I enjoy building interfaces that are not only functional but also intuitive, user-friendly, and well thought out.",
-  "goal": "My goal is to help companies present themselves as modern and confident in the digital space by creating a strong and attractive online presence.",
+  "description": "I work with HTML, CSS, Tailwind, JavaScript, and React, focusing on details, user experience, and performance. I enjoy turning ideas into functional digital products, creating interfaces that combine aesthetics, ease of use, and efficiency. I continuously improve my skills and keep up with modern web development trends.",
+  "goal": "My goal is to help companies create high-quality digital experiences and achieve their business goals through modern web technologies.",
 
   "readMore": "Read more",
   "readLess": "Read less",
@@ -10,7 +10,7 @@
   "faq": {
     "uiApproach": {
       "question": "How do you approach UI development?",
-      "answer": "I start by analyzing the design and requirements, then structure components and plan responsiveness. After that, I implement the user interface step by step, focusing on clean, scalable code and a high-quality user experience."
+      "answer": "I start by analyzing the design and requirements, then I structure the components and plan responsiveness. After that, I implement the user interface step by step, focusing on clean, scalable code and an intuitive interface."
     },
 
     "technologies": {
@@ -20,17 +20,17 @@
 
     "problemSolving": {
       "question": "How do you solve complex technical problems?",
-      "answer": "First, I identify the problem and reproduce it, then analyze errors using DevTools or logs. I break the problem into smaller parts and test solutions step by step. If necessary, I refer to documentation or trusted resources."
+      "answer": "I start by reproducing the issue and carefully analyzing the application’s behavior. Then I use DevTools, logs, and component isolation to identify the source of the error. After that, I break the problem into smaller parts and test possible solutions step by step. If necessary, I refer to documentation or trusted technical resources to find the most optimal approach more quickly."
     },
 
     "fitRole": {
       "question": "Why are you a good fit for this role?",
-      "answer": "I adapt quickly to new technologies, write clean and maintainable code, and focus on delivering results. I also have experience working on team projects in a structured workflow."
+      "answer": "I am a good fit for this role because I learn quickly, easily adapt to new technologies, and always strive for growth. I enjoy solving complex problems, finding effective solutions, and seeing the results of my work. I write clean and understandable code, take responsibility for details, and work well in a team. I have experience participating in team projects with structured development processes and am ready to actively contribute to achieving the company's common goals."
     },
 
     "teamWork": {
       "question": "How do you work in a team?",
-      "answer": "I work effectively in a team, am open to discussing ideas and feedback. I always try to communicate clearly, align tasks, and take responsibility for my part of the work. If needed, I’m ready to help colleagues and quickly adapt to changes in the project."
+      "answer": "I work well in a team environment, am open to discussing ideas and receiving constructive feedback. I always try to clearly communicate my progress, align tasks, and take responsibility for my part of the work. If any questions or blockers arise, I quickly discuss them with the team to avoid delaying the development process. I am also ready to help my colleagues and easily adapt to changes in the project."
     }
   }
 }

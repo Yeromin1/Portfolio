@@ -130,6 +130,13 @@ button {
   --bg-footer: rgb(3, 10, 20);
   --box-shadow-footer-border: 0 -5px 25px rgba(100, 255, 218, 0.2);
   --border-footer-bottom: rgb(35, 75, 134);
+
+  /*--------Splash Screen---------*/
+  --bg-splash: #0a192f;
+  --box-shadow-splash: 0 0 30px cyan, 0 0 60px cyan inset;
+  --text-shadow-splash:
+    0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+  --text-splash: #0d1111;
 }
 
 [data-theme="retro"] {
@@ -203,6 +210,13 @@ button {
   --bg-footer: rgb(236, 227, 202);
   --box-shadow-footer-border: 0 -5px 25px rgba(231, 138, 112, 0.15);
   --border-footer-bottom: #e78a70;
+
+  /*--------Splash Screen---------*/
+  --bg-splash: rgb(236, 227, 202);
+  --box-shadow-splash: 0 0 30px #cc5d3d, 0 0 60px #cc5d3d inset;
+  --text-shadow-splash:
+    0 0 5px #cc5d3d, 0 0 10px #cc5d3d, 0 0 20px #cc5d3d, 0 0 40px #cc5d3d;
+  --text-splash: #f5ede3;
 }
 
 body {
